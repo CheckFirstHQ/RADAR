@@ -1,0 +1,1112 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-06-04T19:33:00.095981",
+    "source": {
+      "filename": "RADAR.csv",
+      "conversionTool": "RADAR CSV to JSON/STIX Converter",
+      "conversionDate": "2025-06-04T19:33:00.095997"
+    },
+    "version": "1.7",
+    "description": "RADAR - Regulatory Assessment for Digital Service Act Risks Framework",
+    "authors": [
+      {
+        "name": "Amaury LESPLINGART",
+        "affiliation": "CheckFirst"
+      },
+      {
+        "name": "Shivika SHARMA",
+        "affiliation": "CheckFirst"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "schemaVersion": "1.0",
+    "organization": "CheckFirst",
+    "organizationSector": "company"
+  },
+  "framework": "RADAR - Regulatory Assessment for Digital Service Act Risks Framework",
+  "categories": [
+    {
+      "id": "cr",
+      "name": "Content-Related Infringements",
+      "description": "Issues stemming from handling of illegal content: content moderation, user reporting processes, including challenges from automated and algorithmic practices.",
+      "infringements": [
+        {
+          "id": "cr_01",
+          "name": "Failure to take action against Illegal Content",
+          "description": "Failure to take action against to illegal content. the provider should, upon obtaining actual knowledge or awareness of illegal activities or illegal content, act expeditiously to remove or to disable access to that content. The removal or disabling of access should be undertaken in the observance of the fundamental rights of the recipients of the service, including the right to freedom of expression and of information",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to curb the spread of information that is not in compliance with Union law or law of the Member State compliant with Union law",
+            "Failure to curb the spread of information that goes against the platform's own terms and conditions",
+            "Legitimate reports about illegal content persisting on a platform despite it being made aware of its existence or having knowledge of its existence",
+            "Evidence of algorithmic bias in illegal content removal decisions",
+            "Failure to curb access to information expeditiously when in knowledge of existence of illegal content"
+          ]
+        },
+        {
+          "id": "cr_02",
+          "name": "Misapplication of Notice-and-Action Mechanisms and Internal Complaint Handling Systems",
+          "description": "Failure of hosting services to meaningfully deal with Notices submitted by individuals or entities—often due to opaque automated decision-making.",
+          "dsaArticles": [
+            "16",
+            "22"
+          ],
+          "observables": [
+            "Failure of hosting services to provide a mechanism to allow any individual or entity to notify them about illegal content on their service .",
+            "Failure to observe fundamental rights of users when removing or disabling access to illegal content",
+            "Notice forms not easily accessible",
+            "Notice forms not user friendly",
+            "Failure to allow submission of notices by electronic means",
+            "Failure to take reasonable efforts to ensure precise and adequately substantiated notices",
+            "Failure to send a confirmation of receipt of the notice to the individual or entity submitting the notice",
+            "Failure to act upon notices in a timely manner, diligent, non-arbitrary and objective manner",
+            "Failure to provide clear, non-arbitrary, subjective reasons for rejecting or not acting upon notices",
+            "Notice forms for illegal content unavailable or not clearly identifiable",
+            "Failure to provide information on the decision and how to redress any content moderation decision made by the hosting services",
+            "Failure to notify the individual or entity of its decision in respect of the notice without undue delay",
+            "Failure to provide the individual or entity on the possibilities for redress in respect of its decision",
+            "Large number of legitimate notices denied or improperly dismissed",
+            "Not possible to submit multiple specific items of illegal content through a single notice (Recital 50)",
+            "Notice form requiring mandatory identification of individual or entity submitting the notice in all circumstances (Recital 50)",
+            "Failure to disclose use of automated means for processing or decision making of notices",
+            "Failure to treat Truster Flaggers' use of the notice and action mechanism with priority (Article 22, Recital 61)",
+            "Failure to provide those who submit notices with the ability to use the complaint mechanism to contest the decision of the provider including when they consider that the action taken by that provider was not adequate",
+            "Frequent user complaints about unjust content removal",
+            "User complaints about unjustified account bans or account suspensions",
+            "High appeal rate leading to content reinstatement",
+            "Automated algorithmic filters with high false-positive rates",
+            "Lack of necessary safeguards against unjustified removal of legal content (Recital 26)"
+          ]
+        },
+        {
+          "id": "cr_03",
+          "name": "Misapplication of Internal Complaint Handling Systems",
+          "description": "Failure of online platforms to provide meaningful internal complaint handling systems (ICHS)",
+          "dsaArticles": [
+            "20",
+            "21",
+            "22"
+          ],
+          "observables": [
+            "Failure to provide users, including those who have submitted a notice under Article 16, with the ability to contest decisions related to illegal content taken by the platform for at least six months",
+            "Lack of effective internal complaint-handling system for users who have reported illegal content",
+            "Failure to provide free of charge complaint-handling system",
+            "Inability to log complaints electronically in the system",
+            "Failure to provide ICHS that are easily accessible, user friendly, and that facilitate the submission of precise and adequately substantiated complaints",
+            "Failure to act upon complaints submitted via ICHS in a timely manner, diligent, non-arbitrary and objective manner",
+            "Failure to inform complainants of their decision without undue delay",
+            "Failure to inform users about the possibility of out-of-court dispute settlements",
+            "Failure to take decisions under the complaint-handling systems without supervision of appropriately qualified staff",
+            "Failure to reverse incorrect decisions",
+            "Evidence of formal requirements like referral to specific legal provisions or elaborate legal explanations in ICHS (Recital 58)",
+            "Large number of legitimate complaints denied or improperly dismissed",
+            "Excessively long or unclear timelines for resolving complaints",
+            "Disproportionately low success rate in legitimate complaints",
+            "No clear procedure for challenging automated decisions",
+            "VLOPSEs failure to ensure their services are organised in a way that allows minors to access easily the notice and action as well as complaint mechanisms (Recital 89)"
+          ]
+        },
+        {
+          "id": "cr_04",
+          "name": "Unsatisfactory Decision Making pertaining to Illegal Content",
+          "description": "Hosting service providers systematically removing lawful user content or accounts—often via over-reliance on automated moderation tools—thus risking undue limitations on freedom of expression.",
+          "dsaArticles": [
+            "14",
+            "17"
+          ],
+          "observables": [
+            "Failure to provide affected recipients with a clear and specific statement of reasons for restrictions imposed on illegal content or content incompatible with T&Cs ( unless the information is deceptive high-volume commercial content)",
+            "Inconsistent or non-transparent decisions given to affected users for restrictions imposed on illegal content or content incompatible with their terms and conditions",
+            "Failure to provide recipients information on the territorial scope of the decision and its duration",
+            "Failure to provide the facts and circumstances relied on in taking the decision",
+            "Failure to provide information on the use made of automated means in taking the decision, including information on whether the decision was taken using automated means where applicable",
+            "Failure to provide information on the legal ground and explanations why content is considered illegal where the decision concerns allegedly illegal content",
+            "Failure to provide information on the contractual ground relied on and appropriate explanations where the decision is based on the alleged incompatibility with T&Cs",
+            "Failure to ensure that information about the possibility for recipients of the service to have access to an out-of-court dispute settlement, is easily accessible on their online interface, clear and user-friendly.",
+            "Unclear, unspecific, incomprehensible, imprecise information given to recipients when they face account restrictions"
+          ]
+        },
+        {
+          "id": "cr_05",
+          "name": "Terms & Conditions",
+          "description": "Unclear and inaccessible Terms and Conditions (T&Cs)",
+          "dsaArticles": [
+            "14"
+          ],
+          "observables": [
+            "Insufficient or unclear information on policies, procedures, measures and tools used for content moderation, including algorithmic decision-making and human review",
+            "Unclear, complicated, not user friendly and ambiguous language in T&Cs",
+            "T&Cs not publicly available",
+            "T&Cs not easily accessible",
+            "Failure to notify users of significant changes to T&Cs",
+            "Failure to explain the use of services in a way that minors can understand",
+            "Failure to act in a diligent, objective and proportionate manner in applying and enforcing content moderation decisions",
+            "Failure to publish T&Cs in the official languages of all EU member states in which they offer services",
+            "Content moderation policies hidden, vague, or only partially disclosed on the platform",
+            "User confusion about what is permissible or not on platforms;",
+            "High volume of support queries related to unclear rules",
+            "T&Cs not in a machine readable format"
+          ]
+        },
+        {
+          "id": "cr_06",
+          "name": "Single Point of Contact",
+          "description": "Failure of Intermediary Services to provide appropriate communication channels",
+          "dsaArticles": [
+            "12"
+          ],
+          "observables": [
+            "Failure to designate a single point of contact to enable users to communicate with them by electronic means and in a user friendly manner",
+            "Failure to provide recipients of a service with the option allowing them to choose the means of communication which shall not solely rely on automated tools",
+            "Failure of providers of intermediary services to make public the information necessary for the recipients of the service in order to easily identify and communicate with their single points of contact. That information shall be easily accessible, and shall be kept up to date."
+          ]
+        },
+        {
+          "id": "cr_07",
+          "name": "Protection against Misuse",
+          "description": null,
+          "dsaArticles": [
+            "23"
+          ],
+          "observables": [
+            "Failure of online platforms to provide clear and detailed policies in respect of misuse of its services and the facts and examples under which they will suspend accounts providing manifestly illegal content or submit manifestly unfounded notices",
+            "Failure of online platforms to suspend the provision of their services to users that frequently provide manifestly illegal content"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr",
+      "name": "Transparency and Reporting Infringements",
+      "description": "Inadequacies in reporting obligations",
+      "infringements": [
+        {
+          "id": "tr_01",
+          "name": "Incomplete or Inaccurate Transparency Reports",
+          "description": "Failure of intermediary services to publish meaningful and timely Transparency Reports",
+          "dsaArticles": [
+            "15",
+            "24"
+          ],
+          "observables": [
+            "Transparency Reports missing critical data. For example: the number of orders received from Member States’ authorities categorised by the type of illegal content, the Member State issuing the order and median time taken to give effect to the order. the number of notices submitted in accordance with Article 16, categorised by the type of alleged illegal content concerned, the number of notices submitted by trusted flaggers, any action taken pursuant to the notices by differentiating whether the action was taken on the basis of the law or the terms and conditions of the provider, the number of notices processed by using automated means and the median time needed for taking the action. meaningful and comprehensible information about the content moderation engaged in at the providers’ own initiative, including the use of automated tools. the number of complaints received through the internal complaint-handling systems. any use made of automated means for the purpose of content moderation, including a qualitative description, a specification of the precise purposes, indicators of the accuracy and the possible rate of error of the automated means used in fulfilling those purposes, and any safeguards applied. the number of disputes submitted to the out-of-court dispute settlement bodies referred to in Article 21, the outcomes of the dispute settlement, and the median time needed for completing the dispute settlement procedures, as well as the share of disputes where the provider of the online platform implemented the decisions of the body, the number of suspensions imposed pursuant to Article 23",
+            "Reports missing meaningful and comprehensible information on content moderation processes including the use of automated tools; measures taken to provide training and assistance to persons in charge of content moderation; outcomes of content moderation decisions;",
+            "Reports missing critical data on use of automated means for content moderation including a qualitative description, specification of precise purposes, indicators of accuracy, possible rate of error of the automated means used in fulfilling those puposes, and safeguards applied",
+            "Evidence of data discrepancies between internal logs and public Transparency reports",
+            "Transparency Reports not published as per provided schedule",
+            "Transparency Reports not publicly available",
+            "Transparency Reports not published in the required machine readable format or are inaccessible",
+            "Failure to provide information on average monthly active users in accordance with the methodology laid down in the Delegated Acts where those Acts have been adopted"
+          ]
+        },
+        {
+          "id": "tr_02",
+          "name": "VLOPSE Transparency Report",
+          "description": null,
+          "dsaArticles": [
+            "42"
+          ],
+          "observables": [
+            "VLOPSEs reports not published every six months",
+            "VLOPSEs reports not published in at least one of the official languages of the Member States",
+            "VLOPSEs failure to publicly designate a single point of contact to enable recipients of the service",
+            "VLOPSEs failure to provide human resources it dedicates to content moderation in respect of services offered in the Union, broken down by each applicable official language of ther Mmeber States,",
+            "VLOPSEs failure to provide information on qualifications and linguistic expertise of the persons carrying out the content moderation activities"
+          ]
+        },
+        {
+          "id": "tr_03",
+          "name": "VLOPSEs risk assessment obligations",
+          "description": "Risk assessment should be specific to their services and proportionate to the systemic risks, taking into consideration severity and probability",
+          "dsaArticles": [
+            "34"
+          ],
+          "observables": [
+            "VLOPSE Platform doesn't carry out the mandatory annual risk assessment",
+            "VLOPSE Platform doesn't undertake the mandatory annual risk assessment prior to deploying new functionalities that are likely to have a critical impact on the risks identified in Article 34",
+            "VLOPSE reports missing details identifying systemic risks stemming from the design of their service and its related systems or use made from their service. For e.g: Online interface design that may stimulate behavioural addictions of recipients of the service (recital 83)",
+            "VLOPSE reports missing details analysing systemic risks stemming from the design of their service and its related systems or use made from their service",
+            "VLOPSE reports missing details assessing systemic risks stemming from the design of their service and its related systems or use made from their service",
+            "VLOPSE reports missing details identifying, analysing and assessing systemic risks stemming from the design of their service and its related systems including algorithmic recommendations or use made from their service",
+            "VLOPSEs reports missing critical data on human resources dedicated to content moderation, broken down by applicable official languages,",
+            "VLOPSEs reports missing critical information on how illegal content is disseminated through their services",
+            "VLOPSEs reports missing critical information on actual or foreseeable negative effects for the exercise of fudamental rights including freedom of expression and information",
+            "VLOPSEs report missing critical information on actual or foreseeable negative effects on civic discourse and electoral processes, and public security",
+            "VLOPSEs report missing critical information on actual or foreseeable negative effects in relation to gender based violence",
+            "VLOPSEs report missing critical information on actual or foreseeable negative effects in relation to the protection of public health",
+            "VLOPSEs report missing critical information on actual or foreseeable negative effects in relation to the protection of minors",
+            "VLOPSEs report missing critical information on actual or foreseeable negative effects in relation to the serious consequences to the person's physical and mental well-being.",
+            "VLOPSEs failure to report specific mitigation measures put in place pursuant to Article 35",
+            "VLOPSEs failure to preserve supporting documents of risk assessments for at least three years after the performance of a risk assessment",
+            "VLOPSE platform failure to communicate supporting documents for risk assessment to the Commission/DSC when requested"
+          ]
+        },
+        {
+          "id": "tr_04",
+          "name": "VLOPSE Non-Compliance with Risk Assessment Obligations",
+          "description": "Obligation to put in place reasonable, proportionate and effectie mitigation measures tailored to the specific systemic risks identified pursuant to Article 34.",
+          "dsaArticles": [
+            "35"
+          ],
+          "observables": [
+            "Failure to adapt content moderation processes in particular in respect of illegal hate speech or cyber violence",
+            "Failure to test and adapt their algorithmic systems, including their recommender systems",
+            "Failure to take targeted measures to protect minors, including age verification and parental control tools, tools aimed at helping minors signal abuse or obtain support",
+            "No formalized risk assessment processes or documentation",
+            "Inability to demonstrate effective mitigation measures for known risks",
+            "Lack of independent third-party audits on risk assessments",
+            "Delayed or superficial risk assessments, especially regarding algorithmic systems",
+            "Platform sanctioned multiple times for similar misconduct",
+            "High volume of infringements across different categories",
+            "Internal policies appearing designed to circumvent regulations",
+            "Pattern of ignoring public or legal pressure to comply",
+            "History of repeated enforcement actions with minimal corrective measures",
+            "Failure to cooperate with trusted flaggers and organise training sessions and exchanges with trusted flagger organisations (Recital 87)",
+            "Failure to ensure that AI-generated images or manipulated images, audio or video that resembles existing persons, objects, places or entities, events and falsely appears to a person to be authentic or truthful is distinguishable through prominent markings when presented on their online interfaces. Failure to provide an easy to use functionality which enables recipients of the service to indicate such information."
+          ]
+        },
+        {
+          "id": "tr_05",
+          "name": "VLOPSEs failure to abide by Guidelines published by the Commission to mitigate systemic risks that may impact the integrity of elections",
+          "description": "VLOPSEs Failure to implement enhanced safeguards during official electoral periods, including restrictions on new political advertisers, enhanced verification requirements, and rapid response to electoral disinformation.",
+          "dsaArticles": [
+            "35"
+          ],
+          "observables": [
+            "Allowing new political advertisers without enhanced verification in pre-election period",
+            "Allowing foreign interference i.e. non-EU residents to purchase ads three months before an election",
+            "No increased monitoring of political ad content during election silence periods",
+            "Failure to implement geographic restrictions for foreign political advertising",
+            "Slow response times to illegal political content during election periods",
+            "No special appeals process for wrongly rejected legitimate political ads",
+            "Failure to reinforce internal processes, including setting up internal teams with adequate resources to improve their mitigation measures",
+            "Failure to implement elections-specific risk mitigation measures tailored to each individual electoral period and local context",
+            "Failure to promote official information on electoral processes",
+            "Failure to adapt recommender systems to empower users and reduce the monetisation and virality of content that threatens the integrity of electoral processes.",
+            "Failure to label political ads and ads created with Generative-AI",
+            "Failure to adopt specific measures including incident response mechanism during an electoral period",
+            "Failure to assess the effectiveness of the measures through post-election reviews",
+            "Failure to cooperate with EU level and national authorities, experts and CSOs to facilitate the use of adequate mitigation measures, including in the areas of FIMI, disinformation and cybersecurity"
+          ]
+        },
+        {
+          "id": "tr_06",
+          "name": "VLOPSEs Recommender System",
+          "description": null,
+          "dsaArticles": [
+            "38"
+          ],
+          "observables": [
+            "Failure to provide at least one option for each of their recommender systems which is not based on profiling"
+          ]
+        },
+        {
+          "id": "tr_07",
+          "name": "VLOPSE Audit Obligations",
+          "description": "VLOPSEs must carry out an annual audit to assess their compliance with obligations set out in Chapter III and commitments in the Code of Conduct",
+          "dsaArticles": [
+            "37",
+            "42"
+          ],
+          "observables": [
+            "VLOPSes failure to conduct an independent annual audit to assess their compliance with obligations set out in Chapter III i.e. due diligence obligations spanning Articles 11-48 of the DSA",
+            "VLOPSEs failure to conduct an independent annual audit to assess their compliance with their commitments pursuant to the Code of Conduct in Article 45, 46 and crisis protocol in Article 48",
+            "VLOPSE failure to make the audit report and any audit implementation report publicly available after 3 months of the receipt of audit report",
+            "VLOPSEs failure to afford auditors the cooperation and assistance necessary to enable them to conduct those audits in an effective, timely and efficient manner",
+            "VLOPSEs failure to provide relevant data and premises and not answering questions to auditors",
+            "VLOPSEs failure to ensure that the auditor writes an audit report for each audit with specific details",
+            "VLOPSEs interfering, hampering, or unduly trying to influence the audit"
+          ]
+        },
+        {
+          "id": "tr_08",
+          "name": "VLOPSE Ad Repository",
+          "description": "Additional online advertising transparency requirements for VLOPSEs",
+          "dsaArticles": [
+            "39"
+          ],
+          "observables": [
+            "Failure to ensure public access to advertisement repositories",
+            "Failure of ad repository to include content of advertisement, including the name of the product, service or brand and the subject matter of the ad, and related data on the ad, the natural or legal person on whose behalf the ad is presented and who paid for the ad as well as the delivery of the ad, including when targeted advertising is concerned",
+            "Failure of the ad repository to include information about targeting and delivery criteria when ads are delivered to persons in vulnerable situations, such as minors (Recital 95)",
+            "Failure to provide a searchable and reliable ad repository tool that allows multicriteria queries and through API",
+            "Failure to provide the repository for the entire period through which they present an ad and until one year after the ad was presented for the last time on their interface",
+            "Failure to remove personal data of the recipients of the service to whom the ad was or could have been presented",
+            "Failure of the ad repository to include information about targeting and delivery criteria when ads are delivered to persons in vulnerable situations, such as minors (Recital 95)",
+            "Failure to disclose whether the ad was intended to be presented specifically to one or more groups od recipients and the main parameters used for that purpose",
+            "Failure to provide a functionality to declare whether the content they provide is or contains commercial communications.",
+            "Failure to disclose the total number of recipients reached and aggregate numbers broken down by Member State for the groups that the ad specifically targeted"
+          ]
+        },
+        {
+          "id": "tr_09",
+          "name": "VLOPSE Crisis Response Mechanism",
+          "description": "Failure to meaningfully cooperate with the Commission during a crisis",
+          "dsaArticles": [
+            "36"
+          ],
+          "observables": [
+            "Failure to assess how the functioning and use of their services significantly contribute to a serious threat or are likely to do so",
+            "Failure to identify and apply specific, effective and proportionate measures to prevent, eliminate or limit any such contribution to the serious threat identified",
+            "Failure to report to the Commission in the specified time period on the assessments, precise content, implementation and qualitative and quantitative impact of those specific measures"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cp",
+      "name": "Consumer Protection and Market Fairness",
+      "description": "Obligations of Online Platforms allowing consumers to conclude distance contracts with traders",
+      "infringements": [
+        {
+          "id": "cp_01",
+          "name": "Trader Traceability Failures",
+          "description": null,
+          "dsaArticles": [
+            "30"
+          ],
+          "observables": [
+            "Failure of online platforms to obtain contact details, identification document, account details, registration documents, self-certification information from the trader prior to the trader's use of their services to sell goods in the Union",
+            "Failure of online platforms to make best efforts to assess whether the information provided by the trader is reliable and complete",
+            "Failure of online platform to make this information available on its online platform in a clear, easily accessible and comprehensible manner and at least where the information on the product or service sold by the trader is presented",
+            "Failure of online platforms to request trader to remedy inaccuracies in information when they obtain sufficient indications that the information provided is incomplete, inaccurate or not up-to-date.",
+            "Failure of online platforms to swiftly suspend the provision of its service to traders who don't comply with its requests to remedy inccurate, incomplete and not up-to-date information.",
+            "Suspicious marketplace activity: sellers with no verified identity or address, missing mandatory product information (e.g. lack of safety warnings or compliance markings), or unusually low prices for branded goods (indicator of counterfeits)."
+          ]
+        },
+        {
+          "id": "cp_02",
+          "name": "Compliance by Design Deficiencies",
+          "description": null,
+          "dsaArticles": [
+            "31"
+          ],
+          "observables": [
+            "Failure of online platform to ensure that its online interface is designed and organised in a way that enables traders to comply with their obligations regarding pre contractual information, compliance and product safety information",
+            "Failure of online platform to ensure that its online interface enables traders to provide their contact details",
+            "Failure to ensure that its online interface is designed and organised to allow traders to provide the information necessary for the clear and unambiguous identification of the products/services",
+            "Failure to ensure that its online interface is designed and organised to allow traders to provide any sign identifying the trader such as the trademark, symbol or logo",
+            "Failure to ensure that its online interface is designed and organised to allow traders to provide information concerning labelling and marking in compliance with product safety/compliance laws and rules",
+            "Failure to make efforts to assess whether the compliance information has been provided prior to allowing them to offer their product/services on the platforms",
+            "Failure to make reasonable efforts to randomly check whether the products/services offered are illegal",
+            "Users report confusion about product characteristics or safety",
+            "Missing or incomplete product descriptions and usage warnings",
+            "No clear terms of service or disclaimers for digital goods",
+            "Frequent disputes due to undisclosed limitations or risks"
+          ]
+        },
+        {
+          "id": "cp_03",
+          "name": "Right to Information",
+          "description": null,
+          "dsaArticles": [
+            "32"
+          ],
+          "observables": [
+            "Failure to inform consumers that they purchased an illegal product/service once platforms become aware that such product was offered through its services",
+            "Failure to inform consumers who purchased the illegal product/services the fact that the product/service was illegal, the identity of the trader and any relevant means of redress",
+            "In the absence of contact details of the consumers concerned, failure to make publicly available and easily accessible the information concerning the product/service, identity of the trader and any relevant means of redress on its online platform"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pa",
+      "name": "Platform Accountability and Cooperation Infringements",
+      "description": "Infractions concerning a platform’s responsibilities to cooperate with regulators, conduct risk assessments, and address systemic non-compliance—including failures related to algorithmic transparency.",
+      "infringements": [
+        {
+          "id": "pa_01",
+          "name": "Non-Cooperation with Regulatory Bodies",
+          "description": "Refusing or unduly delaying the provision of data, documentation, or audits, and hindering regulatory oversight (including withholding internal algorithmic details).",
+          "dsaArticles": [
+            "9",
+            "10",
+            "11",
+            "13",
+            "18",
+            "22",
+            "24",
+            "42",
+            "45",
+            "48",
+            "67",
+            "69"
+          ],
+          "observables": [
+            "Platform repeatedly ignores requests for information from relevant authorities",
+            "Obstructing or misleading relevant regulatory authorities",
+            "Failure to share internal documentation on algorithmic processes",
+            "Failure to promptly inform law enforcement or judicial authorities of the Member State or concerned Member State when it becomes aware of any information giving rise to a suspicion that a criminal offence involving a threat to life or safety of a person has taken place, is taking place or is likely to take place",
+            "Failure to provide specific information without undue delay about one or more individual recipients of the service when in receipt of an order demanding so is issued by the relevant national judicial or administrative authorities",
+            "Failure to designate a single point of contact to enable Member States' authorities, the Commission and the Board to communicate directly with providers",
+            "Failure to act upon orders by relevant national judicial or administrative authorities to take action against illegal content",
+            "Failure to communicate to relevant national judicial or administrative authorities of any effect given to the order to act against illegal content without undue delay including specifying if and when effect was given to the order",
+            "Failure of providers of intermediary services which do not have an establishment in the Union but which offer services in the Union to designate, in writing, a legal or natural person to act as their legal representative in one of the Member States where the provider offers its services",
+            "Failure to notify the name, postal address, email address and telephone number of legal representative to the Digital Services Coordinator in the Member State where that legal representative resides or is established. They shall ensure that that information is publicly available, easily accessible, accurate and kept up to date.",
+            "Failure of online platforms or online search engines to communicate to the Digital Services Coordinator of establishment and the Commission information related to active users updated to the moment of such request without undue delay",
+            "Failure of online platforms to submit to the Commission the decisions and statement of reasons referred to in Article 17 without undue delay and without personal data",
+            "VLOPSEs failure to transmit to the DSC of establishment and Commission without undue delay upon completiton a report setting out results of the risk assessment under Article 34, risk mitigation measures under Article 35, audit report under Article 37(4) and audit implementation report under Article 37(6) or any applicable consultations in support of risk assessment and design of risk mitigation measdures",
+            "Evidence of repeated non-compliance with orders issued by national judicial or administrative authorities to take action against illegal content (Article 9)",
+            "Failure to provide information requested by the Commission concerning an infringement of the DSA",
+            "Evidence of repeated non-compliance with orders issued by national judicial or administrative authorities to take action against illegal content (Article 9)",
+            "Failure to submit to an inspection ordered by the decision of the Commission",
+            "Failure to participate in the drawing up of or reporting on the Code of Conduct when invited to do so by the Commission",
+            "Failure to comply with the relevant Code of Conduct",
+            "Failure to participate in the drawing up of or reporting on Crisis Protocols when invited to do so by the Commission"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch",
+      "name": "Minor Protection and Safety Online",
+      "description": "Violations relating to the failure of platforms to protect minors, including inadequate age verification, poor child-focused safety measures",
+      "infringements": [
+        {
+          "id": "ch_01",
+          "name": "Failure to Implement Adequate Minor Protection Measures",
+          "description": "Not deploying sufficient tools and policies to safeguard minors from harmful or addictive platform design, age-inappropriate and illegal content, including inadequate age verification, lack of parental controls, and absence of child-friendly safety features.",
+          "dsaArticles": [
+            "28"
+          ],
+          "observables": [
+            "Absence of robust age verification mechanisms",
+            "Failure to provide appropriate and proportionate measures to ensure a high level of privacy, safety, and security of minors",
+            "Lack of child-friendly interface or privacy settings",
+            "Frequent legitimate complaints from parents regarding exposure to harmful content",
+            "Failure to conduct child-specific risk assessments",
+            "Lack of accessible reporting mechanisms for minors and their guardians",
+            "Lack of accessible information for minors to understand the design and functioning of VLOPSEs services (Recital 81)",
+            "Exposure to content that may impair minors' health, physical and moral development (Recital 81)",
+            "Exploitative Design of online interfaces which may cause addictive behaviour in minors (Recital 81)",
+            "Prevalence of content encouraging minors to engage in harmful behaviour such as disordered eating, suicidal ideation, pornograpic and overly sexualised content, violent and extremist ideology"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icg",
+      "name": "Illegal Content and Goods",
+      "description": "Content or online activities that violate laws of the Union or of the Member State compliant with the Union law , which platforms must address under the DSA’s notice-and-action rules and related provisions.",
+      "infringements": [
+        {
+          "id": "icg_01",
+          "name": "Terrorist & Extremist Content",
+          "description": "Content that promotes, glorifies, or incites terrorism or violent extremism. Platforms are required to remove such material swiftly once notified, in line with DSA obligations to combat illegal content.",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle terrorist content on the platform",
+            "Content with slogans, symbols, or propaganda associated with terrorist organizations or extremist groups.",
+            "Content praising or supporting terrorist acts or extremist violence ( For e.g. calls to join or fund a terrorist group).",
+            "Content inciting users to commit acts of terrorism (For e.g. diffusing a bomb in a mall or a car)",
+            "Known terrorist or extremist material identified via hash databases or recognized patterns (e.g. violent extremist manifestos)."
+          ]
+        },
+        {
+          "id": "icg_02",
+          "name": "Child Sexual Abuse Material (CSAM)",
+          "description": "Any content depicting or soliciting sexual exploitation of minors. Such material is strictly illegal and must be immediately removed and reported, as mandated by law and reinforced through DSA content removal requirements.",
+          "dsaArticles": [
+            "14",
+            "28",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle the dissemination of audio, video or images or any mixed-media depicting child sexual abuse",
+            "Failure to tackle disemmination of content flagged by CSAI (Child Sexual Abuse Imagery) hash matches or AI classifiers as child exploitation.",
+            "Evidence of text or chat messages attempting to groom minors or exchange sexual content involving minors (e.g. codewords or explicit requests referencing children).",
+            "Algorithmic recommender systems suggesting minors engage with adults instead of peers",
+            "Platform design enabling adults to be able to directly interact with minors without any obstacles/nudges",
+            "User reports or law enforcement notices indicating the presence of child abuse content or behavior"
+          ]
+        },
+        {
+          "id": "icg_03",
+          "name": "Hate Speech & Hate Crime Content",
+          "description": "Targeted hate speech is speech which seeks to dehumanise, demonise, harass, threaten or incite violence against an individual or community based on religion, ethnicity, ‘race’, sex, gender identity, sexual orientation, disability, national origin or migrant status.",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle illegal hate speech on the platform",
+            "Failure to tackle unlawful discriminatory content on the platform",
+            "Failure to tackle content which has use of racial slurs, epithets, or dehumanizing language targeting a protected group.",
+            "Failure to tackle content inciting racism and xenophobia",
+            "Failure to tackle content advocating harm, violence, or genocide toward a demographic group (e.g. calls to violence against an ethnic or religious group).",
+            "Failure to tackle content that invokes denial of rights of certain demographic groups. For eg: Holocaust denial and minimisation",
+            "Failure to tackle content that uses homophobic and transphobic language",
+            "Failure to tackle hateful antisemitic content",
+            "Failure to tackle content attacking and causing harm to protected groups",
+            "Failure to tackle content that includes symbols or imagery associated with hate groups (e.g. swastikas, KKK symbols) in a non-historic / non-academic context"
+          ]
+        },
+        {
+          "id": "icg_04",
+          "name": "Fraud & Scam Content",
+          "description": "Content that intends to defraud or deceive users for financial or personal gain (phishing, financial scams, fake giveaways, etc.).",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle prevalence of messages or posts requesting sensitive personal or financial information under false pretenses (e.g. phishing emails or fake customer support requests).",
+            "Failure to tackle prevalence of claims or offers that are 'too good to be true' (e.g. get-rich-quick investment schemes, unrealistically high returns or rewards) often accompanied by urgency to act.",
+            "Failure to tackle Ads with fake positive reviews to deceptively gain user's trust",
+            "Failure to tackle impersonation of famous celebrities and other authoritative persons in how they present information to trick users to make purchases",
+            "Failure to tackle impersonation of legitimate entities (banks, brands, government) in content or profiles to trick users (e.g. fake verified profiles contacting users)."
+          ]
+        },
+        {
+          "id": "icg_05",
+          "name": "Illicit Goods and Services",
+          "description": "Listings or posts offering illegal or regulated goods and services (drugs, weapons, human trafficking, etc.), or commercial listings that violate legal requirements.",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle product listings referencing illegal items (e.g. narcotics, firearms, counterfeit currency) or using known code words for them to avoid content moderation efforts",
+            "Failure to tackle offers for regulated services without proper authorization (e.g. gambling, supplements, prescription drugs without prescription, hacking services).",
+            "Failure to tackle the illegal offer of accommodation services on the platform",
+            "Failure to tackle the illegal sale of live animals",
+            "Failure to tackle the sale of non-compliant products",
+            "Suspicious marketplace activity: sellers with no verified identity or address, missing mandatory product information (e.g. lack of safety warnings or compliance markings), or unusually low prices for branded goods (indicator of counterfeits)."
+          ]
+        },
+        {
+          "id": "icg_06",
+          "name": "Intellectual Property Infringement",
+          "description": "Content or goods that violate copyright, trademark, or other IP rights (e.g. pirated media, counterfeit branded products). These are unlawful and must be taken down when identified in accordance with notice-and-action rules.",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle the non- authorised use of copyright protected material on the platform",
+            "Failure to tackle the sale of non-compliant or counterfeit products, the sale of products or the provision of services in infringement of consumer protection law on the platform (Recital 12)",
+            "Failure to tackle Images or listings displaying trademarked logos or characters on products not sold by authorized sellers (possible counterfeits).",
+            "Failure to tackle unauthorised use of copyright protected materials. User-uploaded videos, music, or software that match known copyrighted works (via content ID or hash match) without authorization.",
+            "Failure to tackle frequent copyright takedown notices associated with a particular user or item (indicating repeated IP violations)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cv",
+      "name": "Cyber Violence",
+      "description": "Online behaviors that inflict psychological or emotional harm, threaten safety, or incite physical harm to individuals or groups. The DSA’s risk mitigation expectations include addressing such abuse to protect users (especially vulnerable groups and minors) from severe online harassment.",
+      "infringements": [
+        {
+          "id": "cv_01",
+          "name": "Harassment & Cyberbullying",
+          "description": "Persistent or malicious targeting of individuals with offensive, humiliating, or degrading remarks. While not all harassment is illegal, severe cases violate platform policies and contribute to systemic risks DSA asks platforms to curb.",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle online stalking on the platform",
+            "Failure to tackle repeated use of insults, name-calling, or derogatory slurs directed at a specific user across multiple posts or messages.",
+            "Failure to tackle coordinated pile-ons where multiple accounts focus harassment on one individual (e.g. brigading incidents with identical or similar taunts).",
+            "Failure to tackle patterns of one or a group of users sending a high volume of negative or abusive messages in a targeted fashion to another user over a time period."
+          ]
+        },
+        {
+          "id": "cv_02",
+          "name": "Threats of Violence",
+          "description": "Explicit threats to cause harm or kill, or calls for others to commit such violence.",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle content stating intent to physically harm (e.g. 'I will kill you' or 'you should be shot') directed at a person or group.",
+            "Failure to tackle content advocating harm, violence, or genocide toward a demographic group (e.g. calls to violence against an ethnic or religious group).",
+            "Failure to tackle content calling for, or glorifying or encouraging ethnic cleansing",
+            "Failure to tackle content , images or graphics conveying violent threats (e.g. a photo of a weapon with someone's name on it, crosshairs over a person's image).",
+            "Failure to tackle content that calls for or encourages harm to public property like police cars, police stations, public transport etc.",
+            "Failure to tackle content that has indirect suggestions of violence that still target an individual (e.g. 'someone should teach you a lesson with a bat'), indicating menacing intent."
+          ]
+        },
+        {
+          "id": "cv_03",
+          "name": "Doxing & Privacy Invasion",
+          "description": "Malicious exposure of someone’s personal information (home address, phone numbers, workplace, private photos, etc.) without consent, typically to encourage harassment or intimidation. This practice can endanger individuals and violates privacy rights.",
+          "dsaArticles": [
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle content that forcefully reveals personal contact details of a private individual (detailed address, phone, email) with malicious intent (e.g. 'pay them a visit') and without their consent",
+            "Failure to tackle sharing of identity documents, private photos, or sensitive personal data (medical records, financial info) of someone without their permission.",
+            "Failure to tackle organization of mass harassment campaigns leveraging leaked personal info (e.g. urging others to harass the exposed individual at their workplace or home)."
+          ]
+        },
+        {
+          "id": "cv_04",
+          "name": "Non-Consensual Intimate Content",
+          "description": "Sharing or threatening to share someone's intimate media without their consent (also known as \"revenge porn\"). This is illegal in many jurisdictions and platforms must remove it promptly to protect victims.",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle the unlawful non-consensual sharing of intimate or manipulated images, videos or audio on the platform",
+            "Failure to tackle uploads of sexually explicit images/videos where a victim (often an ex-partner) is identifiable and reports indicate they did not consent to the distribution.",
+            "Failure to tackle content titles, captions, or comments suggesting an intimate image/video/audio is being shared as retribution or without permission (e.g. 'Look at what my ex sent me').",
+            "Failure to tackle illegal pornographic content",
+            "Failure to tackle user reports or flags specifically mentioning that private intimate content of theirs was posted without consent."
+          ]
+        },
+        {
+          "id": "cv_05",
+          "name": "Technology-Facilitated Gender-Based Violence",
+          "description": "Content that includes violence directed against a person because of that person's gender or violence that affects persons of a particular gender disproportionately",
+          "dsaArticles": [
+            "14",
+            "34"
+          ],
+          "observables": [
+            "Failure to tackle content dehumanising women by using gendered insults",
+            "Failure to tackle content degrading women by repeatedly and deliberately misgendering them, especially if they perceived that their gender expression does not conform with concepts stereotypically considered ‘feminine",
+            "Failure to tackle content that encourages or supports sexual violence or sexual harassment or use of sexualised slurs",
+            "Repeatedly and deliberately misgendering women using male or gender-neutral names and pronouns.",
+            "Failure to tackle content that uses gendered and sexualised slurs, including cases of sexual harassment (e.g. “great tits”, “you dirty whore”, \"prostitute\", \"sex worker\", \"porn star\")",
+            "Failure to tackle content that constitutes threats of sexual and physical violence. For e.g.: rape and death threats",
+            "Failure to tackle content demeaning and violent statements about women and girls",
+            "Failure to tackle content mocking the seriousness of sexual assault",
+            "Failure to tackle content that spreads violent manosphere propaganda",
+            "Failure to tackle communities or groups that propagate harmful content towards women and girls",
+            "Failure to tackle content that constitutes sexual exploitation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dmm",
+      "name": "Disinformation and Manipulated Media",
+      "description": "False or misleading information that could actual or foreseeable negative effects on civic discourse and electoral processes, and public security",
+      "infringements": [
+        {
+          "id": "dmm_01",
+          "name": "Disinformation Campaigns",
+          "description": "Organized efforts to spread false narratives at scale, often using networks of fake accounts or bots to amplify misleading content. These undermine authentic discourse and are targeted by DSA-aligned risk mitigation measures.",
+          "dsaArticles": [
+            "34"
+          ],
+          "observables": [
+            "Clusters of newly created or low-credibility accounts posting the same misleading content or hashtags in a short time frame (suggesting inauthentic coordination).",
+            "Inauthentic use of the service, including the creation of fake accounts, use of bots, or deceptive use of service, and other automated or partially automated behaviours which may lead to rapid and widespread dissemination of illegal content or incompatible with platform T&C and that contributes to disinformation campaigns (Recital 84)",
+            "Multiple social media accounts with signs of automation (lack of personal info, generic names, repetitive posts) all promoting identical political or conspiratorial messages.",
+            "Network of coordinated inauthentic accounts or pages, displaying notable similarities in their content-sharing behaviours and disseminating harmful information across different platforms",
+            "Failure to curb inauthentic engagement tactics to trick algorithms and bypass content moderation filters. For eg: development of special codes using words and emojis in comment sections to gain virality",
+            "Dissemination or amplification of misleading or deceptive content (not illegal content), including disinformation (Recital 84)",
+            "Lack of visible countermeasures against coordinated disinformation campaigns",
+            "Systemic spread of disinformation without adequate moderation",
+            "Evidence of centralized control, such as accounts sharing content in synchronized patterns or exclusively during specific hours (possibly indicating a 'troll farm' or bot network)."
+          ]
+        },
+        {
+          "id": "dmm_02",
+          "name": "AI-Generated & Synthetic Media",
+          "description": "False or misleading content created using artificial intelligence, such as deepfake videos, AI-generated images, or algorithmically generated text purporting to be human. These can deceive viewers and are an emerging focus under DSA risk mitigation.",
+          "dsaArticles": [
+            "34"
+          ],
+          "observables": [
+            "Videos where a person's face or voice appears altered (e.g. lip-sync mismatch, unnatural facial movements) indicating a deepfake.",
+            "Images that contain subtle artifacts or inconsistencies (e.g. irregular reflections, distorted text) suggestive of AI generation or manipulation.",
+            "Articles or social media posts with language patterns or errors characteristic of AI-generated text (e.g. unusually repetitive phrases or overly formal tone in informal contexts).",
+            "Content that spreads rapidly without clear attribution to a reputable source, potentially originating from AI bots or deepfake accounts impersonating real people.",
+            "Absence of AI content labeling",
+            "Platform's detection tools failing to identify known deepfake techniques"
+          ]
+        },
+        {
+          "id": "dmm_03",
+          "name": "Election Disinformation",
+          "description": "False or harmful information intended to influence political outcomes or undermine democratic processes. This includes misleading information about candidates, parties, voting processes, or election results.",
+          "dsaArticles": [
+            "34"
+          ],
+          "observables": [
+            "Failure to curb content disemminating incorrect, inaccurate, incomplete, not up-to-date information pertaining to voting. For e.g.: incorrect election dates, false claims about how to cast vote, closure of voting/polling booth, misinformation about ballot boxes postponement or cancellation of election-- often timed close to elections.",
+            "Failure to curb content disemminating false claims about an election candidate or public figure (For e.g. fabricated scandals or fake quotes) that have been debunked by credible sources but continue circulating.",
+            "Failure to curb inauthentic pages or profiles posing as official sources and distributing misleading information (e.g. fake election commission accounts announcing bogus results).",
+            "Failure to curb content delegitimising the electoral process. For e.g.: AI-generated videos to show fraudulent vote counting and electoral rigging",
+            "High incidence of user reports on posts containing election falsehoods",
+            "Algorithmic manipulation- for example: using certain words/emojis in the comments in a coordinated manner to make a candidate's post go viral and avoid content moderation filters",
+            "Failure to curb surge of content pushing narratives of election fraud or delegitimization without evidence, often matching known propaganda talking points.",
+            "coordinated disinformation campaigns related to election or electoral processes"
+          ]
+        },
+        {
+          "id": "dmm_04",
+          "name": "Public Health Misinformation",
+          "description": "Health-related falsehoods that can endanger public safety or individual well-being, such as misinformation about vaccines, diseases, or treatments. The DSA encourages mitigation of such content, given its potential for societal harm (e.g. undermining public health efforts).",
+          "dsaArticles": [
+            "34"
+          ],
+          "observables": [
+            "Posts promoting false cures or dangerous health advice (e.g. unverified remedies for serious illnesses, anti-vaccine myths) that contradict medical consensus.",
+            "Conspiracy theories about health emergencies (e.g. claims that a pandemic is a hoax or deliberately caused) spreading widely, especially those flagged by health authorities as false.",
+            "Social media groups or pages centered on discrediting proven health measures (vaccination, mask use) and sharing repetitive misinformation (often identical infographics or text across many users).",
+            "Coordinated disinformation campaigns related to public health (recital 83)",
+            "Videos or images or audio or other media alleging fabricated health crises or misrepresenting data (e.g. misusing statistics to downplay a disease) that are shared without context or fact-check."
+          ]
+        },
+        {
+          "id": "dmm_05",
+          "name": "Crisis and Emergency Misinformation",
+          "description": "Failure to prevent or rapidly respond to false information during emergencies, natural disasters, or security crises that could endanger public safety or hamper emergency response.",
+          "dsaArticles": [
+            "36"
+          ],
+          "observables": [
+            "Platform features being exploited to simulate official emergency alerts",
+            "Impersonation of emergency services or officials during crises",
+            "No activated crisis response protocol despite major emergency",
+            "False claims about infrastructure failures causing panic during a crisis",
+            "False evacuation orders or emergency alerts going viral during a crisis or natural disasters"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dp",
+      "name": "Dark Patterns and Manipulative Design",
+      "description": "User interface designs or platform functionalities or structures that deceive or manipulate users into making choices they might not otherwise make.",
+      "infringements": [
+        {
+          "id": "dp_01",
+          "name": "Obstruction",
+          "description": "Dark patterns on online interfaces of online platforms are practices that materially distort or impair, either on purpose or in effect, the ability of recipients of the service to make autonomous and informed choices or decisions. Those practices can be used to persuade the recipients of the service to engage in unwanted behaviours or into undesired decisions which have negative consequences for them.(Recital 67)",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Designing, organising or operating online interfaces in a way that deceives or manipulates users",
+            "Designing, organising or operating online interfaces in a way that materially distorts or impairs the ability of the users to make free and informed choices",
+            "Deceiving or nudging users or distorting or impairing the autonomy, decision-making, or choice of the users via the structure, design or functionalities of an online interface or a part thereof.",
+            "Exploitative design choices to direct the user to actions that benefit the provider of online platforms, but which may not be in the user’s interests",
+            "Processes for account deletion or subscription cancellation requiring many more steps than sign-up (e.g. multiple confirmation pages or mandatory calls to customer service).",
+            "Absence of a clearly visible \"no thanks\" or \"cancel\" option in a consent or purchase flow, forcing the user to navigate obscure menus to opt out.",
+            "Interfaces that loop the user when trying to opt out (e.g. clicking \\\"cancel\\\" just refreshes the page or leads to another persuasive prompt instead of confirming cancellation).",
+            "Making certain choices more difficult or time-consuming than others",
+            "Giving more prominence to certain choices when asking the recipient of the service for a decision",
+            "Making it unreasonably difficult to discontinue purchases",
+            "Making it unreasonably difficult to sign out from a given online platform allowing consumers to conclude distance contracts with traders",
+            "Directing the recipient to actions that benefit the provider of online platforms, but which may not be in the user’s interests",
+            "Presenting choices in a non-neutral manner, such as giving more prominence to certain choices through visual, auditory, or other components, when asking the recipient of the service for a decision",
+            "Deceiving the recipients of the service by nudging them into decisions on transactions",
+            "Default settings that are very difficult to change",
+            "User complaints of unexpected charges or unclear billing",
+            "High refund or cancellation rates due to user confusion",
+            "Users report confusion about product characteristics or safety",
+            "Missing or incomplete product descriptions and usage warnings",
+            "Making it unreasonably difficult to delete the user's profile/account",
+            "Instances of drip pricing or bait-and-switch tactics",
+            "Making certain choices more difficult or time-consuming than others",
+            "Making the procedure of cancelling a service significantly more cumbersome than signing up to it",
+            "Repeatedly requesting that the recipient of the service make a choice where that choice has already been made, especially by presenting pop-ups that interfere with the user experience"
+          ]
+        },
+        {
+          "id": "dp_02",
+          "name": "Interface Interference & Misdirection",
+          "description": "UI elements that guide the user toward a particular choice through visual or interactive trickery. This includes disguising ads as content, mislabeling buttons, or using design hierarchy to favor one option over others.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Prominent, brightly colored buttons for \\\"accept\\\" or \\\"agree\\\" actions while \\\"decline\\\" or \\\"settings\\\" are hidden in smaller text or harder-to-find locations.",
+            "Pre-checked checkboxes or toggles that opt users into newsletters, data sharing, or add-ons without clear consent, relying on users missing the opt-out.",
+            "Buttons or links that do not do what the user expects (e.g. a \\\"X\\\" icon that does not close a pop-up but instead opens a page, or a \\\"cancel\\\" button that still proceeds with an action)."
+          ]
+        },
+        {
+          "id": "dp_03",
+          "name": "Hidden Information (Sneaking)",
+          "description": "Concealing or downplaying important information from users until after an action is taken. This can involve hiding costs, terms, or consequences, leading users to commit to something without full knowledge.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Additional fees or charges only revealed at the final checkout page, after the user has gone through most of the purchase process.",
+            "Important terms (cancellation policy, auto-renewal, data usage) buried in lengthy terms of service or in footnotes that are not immediately visible to the user during decision-making.",
+            "Default settings that quietly permit data sharing or marketing unless the user discovers and disables them deep in a settings menu."
+          ]
+        },
+        {
+          "id": "dp_04",
+          "name": "Forced Action or Bundling",
+          "description": "Requiring users to perform an unrelated or more intrusive action to get the outcome they desire. This often means bundling a less desirable option with a desired one, so users feel they have no choice but to agree.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Mandating acceptance of broad data collection or marketing emails in order to sign up for a service (e.g. no option to create account without agreeing to receive promotions).",
+            "Forcing users to add extra items or switch settings they don’t want during a process (e.g. automatically including insurance or addons in a purchase that the user must manually remove).",
+            "No viable alternative presented: for example, an app that insists on continuous location access for features that could technically work with one-time access, pushing users to grant more permissions."
+          ]
+        },
+        {
+          "id": "dp_05",
+          "name": "Social Pressure & Fake Urgency",
+          "description": "Tactics that manipulate emotions or create false time pressure to influence user decisions. This includes guilt-tripping language, fake scarcity, or simulated high demand alerts to rush user action.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Phrases in dialogs that shame the user for opting out (e.g. a decline button labeled \\\"No, I don't want to save money\\\" or \\\"I prefer to miss out on deals\\\").",
+            "Countdown timers for offers or carts that reset upon refresh or are clearly not tied to real inventory, indicating artificial time pressure.",
+            "Messages about other users' actions designed to push decision-making (e.g. \\\"5 other people are looking at this item\\\" or \\\"Your friends have joined this event!\\ when such claims are exaggerated or irrelevant)."
+          ]
+        },
+        {
+          "id": "dp_06",
+          "name": "Adaptive Manipulation",
+          "description": "Using algorithms or AI to dynamically alter the user experience in order to exploit individual user behavior or vulnerabilities. This emerging pattern means the interface or offers change in real-time to maximize the platform’s benefit at the expense of user choice.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Unusual personalization where two users see significantly different interface layouts or options in situations where it isn’t expected (suggesting one user is being tested with a more restrictive or persuasive design).",
+            "Price personalization or inconsistent pricing patterns (e.g. a returning user sees higher prices or more add-ons than a first-time visitor, indicating the system adapts to willingness to pay).",
+            "Rapid A/B test cycles where certain users consistently encounter more friction or persuasive prompts (detected via user experience monitoring), implying the platform is algorithmically finding which users are easiest to push into a desired action."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tap",
+      "name": "Targeted Advertisements & Profiling",
+      "description": "Violations of the DSA’s advertising rules, such as impermissible targeting and lack of transparency. It covers practices like using forbidden data for targeting (minors’ data or sensitive categories) and failing to provide clear ad disclosures or user controls over ad profiling.",
+      "infringements": [
+        {
+          "id": "tap_01",
+          "name": "Ads Targeting Minors",
+          "description": "The DSA bans the use of minors’ personal data for targeted advertising, reflecting the need to protect minors from profiling and inappropriate ads.",
+          "dsaArticles": [
+            "26",
+            "28"
+          ],
+          "observables": [
+            "Advertisements tailored to minors based on sensitive personal data",
+            "Advertising content that is unusually tailored to a youthful audience (cartoon characters, school-related themes) being delivered to users likely under 17, suggesting age-based targeting.",
+            "Use of age-sensitive keywords or audience segments in ad delivery data (when available) that include children (e.g. \\\"teen\\\" interests or categories in targeting parameters).",
+            "Personalized ads appearing on accounts or profiles known to belong to children or teenagers (e.g. indicated by declared age or content preferences).",
+            "Lack of effective age-based safeguards for targeted advertising",
+            "User reports of inappropriate ads directed at minor users",
+            "Evidence of profiling techniques used on minor users",
+            "Presenting ads based on profiling using personal data of the user when they are aware with reasonable certainty that the recipient of the service is a minor"
+          ]
+        },
+        {
+          "id": "tap_02",
+          "name": "Ads Using Sensitive Special Categories of Personal Data",
+          "description": "Targeted ads that rely on users’ sensitive attributes -this includes targeting based on ethnicity, political beliefs, sexual orientation, or health data. DSA Article 26 expressly forbids targeting based on such sensitive data without explicit consent.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Presenting ads to users using special categories of personal data",
+            "Advertisements that seem to be targeted very specifically to sensitive aspects of a user’s life (e.g. fertility clinic ads only shown after a user visits pregnancy-related forums, implying use of health data).",
+            "Ad targeting information (from \\\"Why am I seeing this?\\\" disclosures or ad APIs) that references sensitive categories (e.g. \\\"based on your interest in Christianity\\\" or \\\"based on your political leaning\\\").",
+            "Clusters of users with a common sensitive trait all receiving the same ad campaign, detected via analysis of ad distribution, which suggests targeting by that trait."
+          ]
+        },
+        {
+          "id": "tap_03",
+          "name": "Advertising and Recommender System Opacity",
+          "description": null,
+          "dsaArticles": [
+            "26",
+            "27",
+            "28"
+          ],
+          "observables": [
+            "User can't identify that the information they're seeing is an advertisement",
+            "User can't identify the person on whose behalf the advertisement is presented",
+            "User can't identify who paid for the advertisement",
+            "Failure to provide clear, concise and unambiguous information for each specific ad presented to each individual recipient.",
+            "Sponsored posts or ads that are not explicitly marked as advertisements (e.g. missing labels like \\\"Ad\\\", \\\"Sponsored\\\", or subtle labeling that could be easily overlooked).",
+            "No visible information on who paid for an advertisement or who the advertiser is on the ad unit (e.g. no \\\"Sponsored by [Entity]\\\" disclosure or profile link).",
+            "User can't see meaningful information directly and easily accessible from the advertisement about the main parameters used to determine the recipient to whom the advertisement is presented and, where applicable, about how to change those parameters For example, \"Because you've shown interest in sports shoes\" or \"Because you are located in Berlin.\"",
+            "User can't access the functionality to declare whether the content they are uploading is or contains commercial communications.",
+            "Omission of any \\\"why am I seeing this ad\\\" feature or similar transparency tool that reveals targeting criteria, leaving users without insight into why they were targeted.",
+            "Omission of prominent markings that the content contains commercial communications",
+            "Failure to provide functionality allowing users to select and modify their preferred option for recommender systems (27(3))",
+            "No option for users to report ads that they find misleading or inappropriate",
+            "Failure of VLOPSEs that use recommender systems to provide at least one option for each of their recommender systems which is not based on profiling",
+            "User can't identify in a clear, unambiguous manner and in real time, including through prominent markings following standards under Article 44 that the content provided is or contains commercial communications",
+            "Evidence of discriminatory presentation of ads that affect the equal treatment and opportunities of citizens",
+            "No accessible explanation of how advertisement recommendations are generated (Recital 68)",
+            "Ad transparency tools providing only vague categories like 'interests' without specifics",
+            "No clear explanation of how user actions influence future ad targeting",
+            "Missing information about data brokers or third-party sources used for targeting",
+            "Advertisements formatted to mimic editorial or user content (e.g. news-like articles or social media posts that do not clearly appear as ads, aside from maybe fine-print).",
+            "Influencer or affiliate posts promoting a product without any disclosure (no #ad or mention of sponsorship), effectively hiding the commercial intent from viewers.",
+            "Ad creatives that use doctored images or fake testimonials (e.g. before-and-after images that are manipulated, or quotes from non-existent people) to entice clicks, detectable by image analysis or cross-checking claims.",
+            "Ads that lead to landing pages which significantly differ from the ad content promised (bait-and-switch), identified by high bounce rates or user complaints (e.g. ad advertises a free offer, landing page tries to sell something else).",
+            "No clear terms of service or disclaimers for digital goods",
+            "Frequent disputes due to undisclosed limitations or risks",
+            "Recommender system explanations using technical jargon incomprehensible to average users"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pad",
+      "name": "Political Advertising Infringements",
+      "description": "Violations relating to political and issue-based advertisements on online platforms, encompassing transparency requirements, clear labeling, restrictions on sensitive data use, and special obligations during electoral periods to protect democratic discourse and electoral integrity.",
+      "infringements": [
+        {
+          "id": "pad_01",
+          "name": "Failure to Label Political Advertisements Clearly",
+          "description": "Political or issue-based adverts are not properly labelled with required sponsorship details or disclaimers, thereby obscuring accountability.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Political ads appearing without a 'paid for by' disclosure",
+            "Inconsistent enforcement of political ad labelling requirements",
+            "High number of user reports or academic reports regarding deceptive political ad practices",
+            "User can't identify that the information they're seeing is an advertisement",
+            "User can't identify the person on whose behalf the advertisement is presented",
+            "User can't identify who paid for the advertisement",
+            "Political ads using native advertising formats that mimic organic content",
+            "Disclaimers in illegible font size or placed where users unlikely to notice",
+            "Use of influencers for political messaging without proper disclosure"
+          ]
+        },
+        {
+          "id": "pad_02",
+          "name": "Unfair Targeting or Microtargeting in Political Campaigns",
+          "description": "Using personal data—including sensitive attributes—for political ads without proper consent, leading to discriminatory or opaque targeting practices.",
+          "dsaArticles": [
+            "27"
+          ],
+          "observables": [
+            "Ads targeting specific groups based on ethnicity, religion, or political affiliation",
+            "No audit trails demonstrating lawful consent for data use in microtargeting",
+            "User data used for targeted political ads without adequate disclosure",
+            "Policy ambiguities regarding acceptable targeting methods for political campaigns",
+            "Using psychological profiling or personality assessments for political targeting",
+            "Targeting based on inferred vulnerabilities (e.g., financial stress, health concerns)",
+            "Using lookalike audiences based on sensitive political data"
+          ]
+        },
+        {
+          "id": "pad_03",
+          "name": "Political Ad Repository Deficiencies",
+          "description": "Failure to maintain comprehensive, searchable archives of political advertisements with required information about targeting, spend, and reach, limiting public oversight of political campaigns.",
+          "dsaArticles": [
+            "39"
+          ],
+          "observables": [
+            "Political ads missing from public ad library despite running on platform",
+            "Repository lacking API access for researchers and journalists",
+            "Incomplete data on ad targeting parameters and audience size",
+            "No version history for edited political advertisements",
+            "Repository search function too limited to find relevant ads",
+            "Delayed addition of political ads to repository (not real-time)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "das",
+      "name": "Data Access and Scrutiny",
+      "description": "Obligations for VLOPSEs to provide meaningful access to data and algorithmic systems for regulatory compliance monitoring and legitimate research into systemic risks, ensuring transparency while protecting user privacy and trade secrets.",
+      "infringements": [
+        {
+          "id": "das_01",
+          "name": "Data Access Restrictions",
+          "description": "Failure to provide timely, meaningful, and technically appropriate access to data and algorithmic systems when requested by regulators or vetted researchers, undermining oversight and research capabilities essential for DSA compliance monitoring.",
+          "dsaArticles": [
+            "40"
+          ],
+          "observables": [
+            "Failure of VLOPSEs to provide DSC of establishment or Commission at their reasoned request and within a reasonable period specified in that request, access to data that are necessary to monitor and assess compliance with the DSA",
+            "Failure of VLOPSEs to provide the DSC of establishment of the Commission an explanation of the design, logic, functioning and the testing of their algorithmic systems including their recommender systems",
+            "Failure of VLOPSEs to provide access to data to vetted researchers to conduct research that contributes to the detection, identification and understanding of systemic risks in the Union under Article 34 and to the assessment of the adequacy, efficiency and impacts of the risk mitigation measures under Article 35 upon reasoned request of the DSC of establishment",
+            "Failure of VLOPSEs to provide access to data through appropriate interfaces such as online databases or APIs",
+            "Failure of VLOPSEs to provide access to data in a timely manner",
+            "Failure of VLOPSEs to provide access to real time data where technically possible",
+            "Imposing unreasonable conditions to provide access to data",
+            "Providing data in unusable formats (e.g., PDFs instead of machine-readable files)",
+            "Excessive redaction of data beyond legitimate privacy or trade secret concerns",
+            "Imposing technical barriers that effectively prevent data access (e.g., rate limits that make research impossible)",
+            "Requiring NDAs or terms that prevent researchers from publishing findings",
+            "Delayed responses that render time-sensitive research obsolete",
+            "Refusing to provide data dictionaries or documentation necessary to understand data",
+            "Charging excessive fees for data access beyond reasonable cost recovery",
+            "Selectively providing data that presents platform in favorable light",
+            "Failing to maintain data that should be available under retention policies"
+          ]
+        },
+        {
+          "id": "das_02",
+          "name": "Inadequate Research Infrastructure",
+          "description": "Failure to establish and maintain appropriate technical infrastructure and processes for facilitating compliant data access, including secure environments, proper anonymization tools, and standardized access procedures",
+          "dsaArticles": [
+            "40"
+          ],
+          "observables": [
+            "No dedicated data access portal or API for researchers",
+            "Absence of secure research environments for sensitive data analysis",
+            "Lack of standardized data request procedures or forms",
+            "No designated team to handle researcher access requests",
+            "No process for verifying researcher credentials or vetting status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com",
+      "name": "Compliance Function",
+      "description": "Requirements for VLOPSEs to establish independent internal compliance oversight, ensuring systematic monitoring of DSA obligations through dedicated compliance officers with sufficient authority and resources.",
+      "infringements": [
+        {
+          "id": "com_01",
+          "name": "Deficient or Absent Compliance Function",
+          "description": "Failure to establish or maintain an independent compliance function with qualified officers who can effectively monitor DSA compliance, coordinate with regulators, and ensure proper implementation of risk assessments and mitigation measures.",
+          "dsaArticles": [
+            "41"
+          ],
+          "observables": [
+            "Compliance officers lacking direct reporting line to senior management or board level",
+            "Evidence of compliance function being overruled by operational teams without proper justification",
+            "Insufficient resources (budget, staff, tools) allocated to compliance function relative to platform size",
+            "Compliance officers not involved in product development or major operational decisions that affect DSA compliance",
+            "Absence of regular compliance reports to management on DSA obligations",
+            "Compliance function not consulted before deploying new features with systemic risk implications",
+            "High turnover in compliance officer positions suggesting organizational issues",
+            "Compliance recommendations consistently ignored or delayed without valid reasons"
+          ]
+        },
+        {
+          "id": "com_02",
+          "name": "Compromised Compliance Independence",
+          "description": "Compliance function exists but lacks genuine independence from operational functions, creating conflicts of interest or inability to effectively challenge non-compliant practices.",
+          "dsaArticles": [
+            "41"
+          ],
+          "observables": [
+            "Compliance officers simultaneously holding operational responsibilities",
+            "Evidence of retaliation against compliance officers for escalating issues",
+            "Compliance decisions requiring approval from operational management"
+          ]
+        }
+      ]
+    }
+  ]
+}

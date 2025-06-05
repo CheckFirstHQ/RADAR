@@ -1,0 +1,26 @@
+{
+  "versions": [
+	{
+	  "version": "1.8",
+	  "label": "Development",
+	  "date": "2025-06-01",
+	  "description": "Updated with latest DSA interpretations and enforcement patterns",
+	  "authors":["Amaury LESPLINGART","Shivika SHARMA"]
+	},
+	{
+	  "version": "1.7",
+	  "label": "Latest",
+	  "default": true,
+	  "date": "2025-06-01",
+	  "description": "Initial public release",
+	  "authors":["Amaury LESPLINGART","Shivika SHARMA"]
+	},
+	{
+	  "version": "1.6",
+	  "label": "Stable",
+	  "date": "2024-08-01",
+	  "description": "Initial comprehensive framework release",
+	  "authors":["Amaury LESPLINGART"]
+	}
+  ]
+}
