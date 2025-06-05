@@ -1,0 +1,86 @@
+{
+  "@context": {
+	"@version": 1.1,
+	"@base": "https://radar.checkfirst.network/schema#",
+	"radar": "https://radar.checkfirst.network/schema#",
+	"schema": "https://schema.org/",
+	"dsa": "https://digital-strategy.ec.europa.eu/dsa#",
+	
+	"DSAAssessment": {
+	  "@id": "radar:DSAAssessment",
+	  "@type": "@id"
+	},
+	
+	"version": {
+	  "@id": "radar:frameworkVersion",
+	  "@type": "schema:Text",
+	  "@comment": "The version of the RADAR framework used for this assessment"
+	},
+	
+	"platform": {
+	  "@id": "radar:assessedPlatform", 
+	  "@type": "schema:Text",
+	  "@comment": "The name of the platform or service being assessed"
+	},
+	
+	"assessmentDate": {
+	  "@id": "radar:assessmentDate",
+	  "@type": "schema:Date",
+	  "@comment": "The date when the assessment was conducted"
+	},
+	
+	"infringements": {
+	  "@id": "radar:identifiedInfringements",
+	  "@type": "@id",
+	  "@container": "@index",
+	  "@comment": "Object containing categories of infringements as keys with arrays of infringement IDs"
+	},
+	
+	"totalInfringements": {
+	  "@id": "radar:totalInfringementCount",
+	  "@type": "schema:Integer",
+	  "@comment": "The total number of infringements identified across all categories"
+	},
+	
+	"report": {
+	  "@id": "radar:fullReportURL",
+	  "@type": "schema:URL", 
+	  "@comment": "URL to the full assessment report"
+	},
+	
+	"author": {
+	  "@id": "schema:author",
+	  "@type": "schema:Text",
+	  "@comment": "The organization or individual who conducted the assessment"
+	},
+	
+	"authorUrl": {
+	  "@id": "schema:url",
+	  "@type": "schema:URL",
+	  "@comment": "URL of the assessing organization"
+	},
+	
+	"categories": {
+	  "@id": "radar:infringementCategories",
+	  "@type": "@vocab",
+	  "@comment": "RADAR infringement category codes",
+	  "@context": {
+		"cr": {"@id": "radar:ContentRelated", "@comment": "Content-Related Infringements"},
+		"tr": {"@id": "radar:TransparencyReporting", "@comment": "Transparency and Reporting"},
+		"cp": {"@id": "radar:ConsumerProtection", "@comment": "Consumer Protection"},
+		"pa": {"@id": "radar:PlatformAccountability", "@comment": "Platform Accountability"},
+		"pad": {"@id": "radar:PoliticalAdvertising", "@comment": "Political Advertising"},
+		"ei": {"@id": "radar:ElectionIntegrity", "@comment": "Election Integrity"},
+		"ch": {"@id": "radar:ChildProtection", "@comment": "Child Protection"},
+		"icg": {"@id": "radar:IllegalContentGoods", "@comment": "Illegal Content and Goods"},
+		"cv": {"@id": "radar:CyberViolence", "@comment": "Cyber Violence"},
+		"dmm": {"@id": "radar:DisinformationMedia", "@comment": "Disinformation and Manipulated Media"},
+		"dp": {"@id": "radar:DarkPatterns", "@comment": "Dark Patterns"},
+		"tap": {"@id": "radar:TargetedAds", "@comment": "Targeted Advertisements & Profiling"},
+		"syr": {"@id": "radar:SystemicRisks", "@comment": "Systemic Risks for VLOPSEs"},
+		"das": {"@id": "radar:DataAccess", "@comment": "Data Access and Scrutiny"},
+		"com": {"@id": "radar:ComplianceFunction", "@comment": "Compliance Function"}
+	  }
+	}
+  }
+}
