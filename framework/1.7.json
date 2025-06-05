@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2025-06-04T19:33:00.095981",
+    "lastUpdated": "2025-06-05T13:09:52.417771",
     "source": {
       "filename": "RADAR.csv",
       "conversionTool": "RADAR CSV to JSON/STIX Converter",
-      "conversionDate": "2025-06-04T19:33:00.095997"
+      "conversionDate": "2025-06-05T13:09:52.417787"
     },
     "version": "1.7",
     "description": "RADAR - Regulatory Assessment for Digital Service Act Risks Framework",
