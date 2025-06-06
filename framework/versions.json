@@ -17,7 +17,7 @@
 	},
 	{
 	  "version": "1.6",
-	  "label": "Stable",
+	  "label": "",
 	  "date": "2024-08-01",
 	  "description": "Initial comprehensive framework release",
 	  "authors":["Amaury LESPLINGART"]
