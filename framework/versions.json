@@ -2,15 +2,15 @@
   "versions": [
 	{
 	  "version": "1.8",
-	  "label": "Development",
-	  "date": "2025-06-01",
+	  "label": "Latest",
+	  "default": true,
+	  "date": "2025-08-28",
 	  "description": "Updated with latest DSA interpretations and enforcement patterns",
 	  "authors":["Amaury LESPLINGART","Shivika SHARMA"]
 	},
 	{
 	  "version": "1.7",
-	  "label": "Latest",
-	  "default": true,
+	  "label": "",
 	  "date": "2025-06-01",
 	  "description": "Initial public release",
 	  "authors":["Amaury LESPLINGART","Shivika SHARMA"]
