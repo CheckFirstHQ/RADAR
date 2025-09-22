@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-09-22T10:36:03.313517",
+    "source": {
+      "filename": "RADAR.csv",
+      "conversionTool": "RADAR CSV to JSON/STIX Converter",
+      "conversionDate": "2025-09-22T10:36:03.313543"
+    },
+    "version": "1.6",
+    "description": "RADAR - Regulatory Assessment for Digital Service Act Risks Framework",
+    "authors": [
+      {
+        "name": "Amaury Lesplingart",
+        "affiliation": "CheckFirst"
+      },
+      {
+        "name": "Shivika Sharma",
+        "affiliation": "CheckFirst"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "schemaVersion": "1.0",
+    "organization": "CheckFirst",
+    "organizationSector": "company"
+  },
+  "framework": "RADAR - Regulatory Assessment for Digital Service Act Risks Framework",
+  "categories": []
+}

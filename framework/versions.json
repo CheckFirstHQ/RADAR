@@ -21,6 +21,27 @@
 	  "date": "2024-08-01",
 	  "description": "Initial comprehensive framework release",
 	  "authors":["Amaury LESPLINGART"]
+	},
+	{
+	  "version": "1.5",
+	  "label": "",
+	  "date": "2024-05-01",
+	  "description": "Internal release",
+	  "authors":["Amaury LESPLINGART"]
+	},
+	{
+	  "version": "1.4",
+	  "label": "",
+	  "date": "2024-03-01",
+	  "description": "Internal release",
+	  "authors":["Amaury LESPLINGART"]
+	},
+	{
+	  "version": "1.3",
+	  "label": "",
+	  "date": "2024-01-01",
+	  "description": "Internal release",
+	  "authors":["Amaury LESPLINGART"]
 	}
   ]
 }
