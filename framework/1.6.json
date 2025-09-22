@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2025-09-22T10:36:03.313517",
+    "lastUpdated": "2025-09-22T10:53:03.167980",
     "source": {
       "filename": "RADAR.csv",
       "conversionTool": "RADAR CSV to JSON/STIX Converter",
-      "conversionDate": "2025-09-22T10:36:03.313543"
+      "conversionDate": "2025-09-22T10:53:03.168008"
     },
     "version": "1.6",
     "description": "RADAR - Regulatory Assessment for Digital Service Act Risks Framework",
@@ -24,5 +24,702 @@
     "organizationSector": "company"
   },
   "framework": "RADAR - Regulatory Assessment for Digital Service Act Risks Framework",
-  "categories": []
+  "categories": [
+    {
+      "id": "cr",
+      "name": "Content-Related Infringements",
+      "description": "Issues stemming from content moderation, illegal content handling, and user reporting processes, including challenges from automated and algorithmic practices.",
+      "infringements": [
+        {
+          "id": "cr_01",
+          "name": "Failure to Remove or Disable Access to Illegal Content",
+          "description": "Not acting on valid notices in a timely manner or lacking appropriate tools—including robust algorithmic oversight—to remove or disable illegal content (e.g. hate speech, terrorist content).",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Large backlog of unaddressed user reports over a prolonged period",
+            "Evidence of repeated non-compliance with legal takedown requests",
+            "Lack of documentation on notice-and-action procedures",
+            "Multiple user complaints about illegal content persisting on the platform",
+            "Instances where automated filters fail to update despite known risks"
+          ]
+        },
+        {
+          "id": "cr_02",
+          "name": "Misapplication of Notice-and-Action Mechanisms",
+          "description": "Failing to provide user-friendly notice forms, ignoring valid takedown requests, or rejecting them without proper justification—often due to opaque automated decision-making.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Notice forms unavailable or difficult to locate for users",
+            "High number of legitimate requests denied or improperly dismissed",
+            "Inconsistent or non-transparent takedown decisions",
+            "Failure to provide clear reasons for rejecting notices",
+            "Automated rejections stemming from flawed algorithmic processes"
+          ]
+        },
+        {
+          "id": "cr_03",
+          "name": "Excessive or Unjustified Content Removal",
+          "description": "Systematically removing lawful user content—often via over-reliance on automated moderation tools—thus risking undue limitations on freedom of expression.",
+          "dsaArticles": [
+            "7",
+            "12"
+          ],
+          "observables": [
+            "Frequent user complaints about unjust content removal",
+            "High appeal rate leading to content reinstatement",
+            "Moderation policies that are overly broad or poorly defined",
+            "Automated filters with high false-positive rates",
+            "Evidence of algorithmic bias in content removal decisions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr",
+      "name": "Transparency and Reporting Infringements",
+      "description": "Inadequacies in reporting obligations, including missing or inaccurate data on content moderation, automated processes, and deceptive design practices (dark patterns).",
+      "infringements": [
+        {
+          "id": "tr_01",
+          "name": "Incomplete or Inaccurate Transparency Reports",
+          "description": "Failure to publish requisite information on content moderation, automated processes, or user metrics as mandated by the DSA.",
+          "dsaArticles": [
+            "13"
+          ],
+          "observables": [
+            "Reports missing critical data (e.g. number of takedown requests, outcomes)",
+            "Data discrepancies between internal logs and public reports",
+            "Reports not published on schedule or in the required format",
+            "Lack of detailed analysis on algorithmic decision-making and error rates"
+          ]
+        },
+        {
+          "id": "tr_02",
+          "name": "Failure to Disclose Content Moderation Policies",
+          "description": "Not informing users about house rules, automated moderation procedures, or policy changes that affect content moderation and platform usage.",
+          "dsaArticles": [
+            "13"
+          ],
+          "observables": [
+            "Content policies hidden, vague, or only partially disclosed",
+            "Frequent user confusion about what is permissible",
+            "Changes to moderation policies implemented without adequate notice",
+            "High volume of support queries related to unclear rules"
+          ]
+        },
+        {
+          "id": "tr_03",
+          "name": "Opaque Advertising, Recommendation, and Dark Pattern Practices",
+          "description": "Not providing clarity on targeted advertising processes, data usage, how recommendation algorithms function, or the use of manipulative user interface designs (dark patterns).",
+          "dsaArticles": [
+            "25",
+            "26"
+          ],
+          "observables": [
+            "Ads or sponsored content not labelled or distinguished from organic posts",
+            "No accessible explanation of how recommendations are generated",
+            "User complaints about deceptive interface designs and dark patterns",
+            "Absence of alternative non-profiled recommendation options",
+            "Failure to disclose key parameters used in algorithmic recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ur",
+      "name": "User Rights and Data Protection Infringements",
+      "description": "Violations relating to user privacy, data protection, and effective redress mechanisms, including issues from automated data processing and profiling.",
+      "infringements": [
+        {
+          "id": "ur_01",
+          "name": "Violations of Users’ Privacy",
+          "description": "Collection, processing, or sharing of personal data in ways that breach DSA or GDPR requirements—including for AI training—without explicit consent.",
+          "dsaArticles": [],
+          "observables": [
+            "Platform collecting sensitive data without explicit consent",
+            "Data shared with third parties without clear legal basis",
+            "Insecure storage practices leading to data breaches",
+            "Lack of robust anonymization in data processing",
+            "Evidence of user data used for AI model training without proper disclosure"
+          ]
+        },
+        {
+          "id": "ur_02",
+          "name": "Lack of Effective User Redress Mechanisms",
+          "description": "Failing to provide accessible processes for users to appeal content takedowns, account suspensions, or other enforcement actions.",
+          "dsaArticles": [
+            "17"
+          ],
+          "observables": [
+            "Appeal procedures not clearly communicated to users",
+            "Excessively long or unclear timelines for resolving appeals",
+            "Disproportionately low success rate in legitimate appeals",
+            "No clear contact method for challenging automated decisions"
+          ]
+        },
+        {
+          "id": "ur_03",
+          "name": "Failure to Implement Necessary Security Measures",
+          "description": "Inadequate technical or organizational measures to secure user accounts and personal information from unauthorized access or exploitation, including risks posed by automated systems.",
+          "dsaArticles": [
+            "16"
+          ],
+          "observables": [
+            "Repeated or large-scale data breaches due to weak security",
+            "No multi-factor authentication or encryption measures",
+            "Failure to address known security vulnerabilities",
+            "Lack of incident response or notification procedures"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pa",
+      "name": "Platform Accountability and Cooperation Infringements",
+      "description": "Infractions concerning a platform’s responsibilities to cooperate with regulators, conduct risk assessments, and address systemic non-compliance—including failures related to algorithmic transparency.",
+      "infringements": [
+        {
+          "id": "pa_01",
+          "name": "Non-Cooperation with Regulatory Bodies",
+          "description": "Refusing or unduly delaying the provision of data, documentation, or audits, and hindering regulatory oversight (including withholding internal algorithmic details).",
+          "dsaArticles": [
+            "22"
+          ],
+          "observables": [
+            "Platform repeatedly ignores requests for information",
+            "Delays in providing data with no legitimate justification",
+            "Obstructing or misleading regulatory authorities",
+            "Lack of a designated contact point for compliance queries",
+            "Failure to share internal documentation on algorithmic processes"
+          ]
+        },
+        {
+          "id": "pa_02",
+          "name": "Non-Compliance with Risk Assessment Obligations",
+          "description": "Failing to identify, assess, and mitigate systemic risks (e.g. illegal content, disinformation, algorithmic bias) as required by the DSA.",
+          "dsaArticles": [
+            "14"
+          ],
+          "observables": [
+            "No formalized risk assessment processes or documentation",
+            "Inability to demonstrate effective mitigation measures for known risks",
+            "Lack of independent third-party audits on risk assessments",
+            "Delayed or superficial risk assessments, especially regarding algorithmic systems"
+          ]
+        },
+        {
+          "id": "pa_03",
+          "name": "Systemic or Repeated Offences",
+          "description": "Persistent non-compliance or multiple violations indicating weak internal controls or a deliberate disregard for DSA obligations.",
+          "dsaArticles": [
+            "23"
+          ],
+          "observables": [
+            "Platform sanctioned multiple times for similar misconduct",
+            "High volume of infringements across different categories",
+            "Internal policies appearing designed to circumvent regulations",
+            "Pattern of ignoring public or legal pressure to comply",
+            "History of repeated enforcement actions with minimal corrective measures"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cp",
+      "name": "Consumer Protection and Market Fairness Infringements",
+      "description": "Misleading commercial practices, unfair competitive restrictions, or inadequate product/service information that distort consumer choice—often exacerbated by manipulative interface designs.",
+      "infringements": [
+        {
+          "id": "cp_01",
+          "name": "Misleading Commercial Practices",
+          "description": "Deceptive advertising, hidden fees, or failure to disclose essential product or service information, including through the use of manipulative design practices.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "User complaints of unexpected charges or unclear billing",
+            "Advertising that omits critical product/service details",
+            "High refund or cancellation rates due to user confusion",
+            "Use of dark patterns or deceptive UI elements to manipulate choices",
+            "Instances of drip pricing or bait-and-switch tactics"
+          ]
+        },
+        {
+          "id": "cp_02",
+          "name": "Unfair Restriction of Competition",
+          "description": "Practices that intentionally block or disadvantage competing services or sellers, thereby restricting consumer choice and market fairness.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Platform refusing to list or promote competing products/services",
+            "Discriminatory terms imposed on certain marketplace vendors",
+            "Excessive restrictions preventing users from accessing rival services",
+            "Evidence of collusion or exclusive deals that harm consumer interests"
+          ]
+        },
+        {
+          "id": "cp_03",
+          "name": "Inadequate Product or Service Labelling",
+          "description": "Failure to provide essential details (e.g. origin, specifications, disclaimers) about digital products or services, hindering informed consumer decisions.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Users report confusion about product characteristics or safety",
+            "Missing or incomplete product descriptions and usage warnings",
+            "No clear terms of service or disclaimers for digital goods",
+            "Frequent disputes due to undisclosed limitations or risks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pad",
+      "name": "Political Advertising Infringements",
+      "description": "Violations relating to political advertisements on online platforms, focusing on transparency, clear labelling, and appropriate use of personal data in political campaigns.",
+      "infringements": [
+        {
+          "id": "pad_01",
+          "name": "Failure to Label Political Advertisements Clearly",
+          "description": "Political or issue-based adverts are not properly labelled with required sponsorship details or disclaimers, thereby obscuring accountability.",
+          "dsaArticles": [
+            "27"
+          ],
+          "observables": [
+            "Political ads appearing without a 'paid for by' disclosure",
+            "Advert sponsor or funding source not visible",
+            "High number of user reports regarding deceptive political ad practices",
+            "Inconsistent enforcement of political ad labelling requirements"
+          ]
+        },
+        {
+          "id": "pad_02",
+          "name": "Unfair Targeting or Microtargeting in Political Campaigns",
+          "description": "Using personal data—including sensitive attributes—for political ads without proper consent, leading to discriminatory or opaque targeting practices.",
+          "dsaArticles": [
+            "27"
+          ],
+          "observables": [
+            "Ads targeting specific groups based on ethnicity, religion, or political affiliation",
+            "No audit trails demonstrating lawful consent for data use in microtargeting",
+            "User data used for targeted political ads without adequate disclosure",
+            "Policy ambiguities regarding acceptable targeting methods for political campaigns"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ei",
+      "name": "Election Integrity Infringements",
+      "description": "Infractions focused on safeguarding electoral processes, including failure to mitigate disinformation and algorithmic manipulation during election periods.",
+      "infringements": [
+        {
+          "id": "ei_01",
+          "name": "Promotion or Amplification of Electoral Disinformation",
+          "description": "Allowing the spread or algorithmic amplification of false or misleading information about elections, candidates, or outcomes, thereby undermining the democratic process.",
+          "dsaArticles": [
+            "14"
+          ],
+          "observables": [
+            "High incidence of user reports on posts containing election falsehoods",
+            "Algorithmic amplification of unverified claims without proper fact-checking",
+            "Systemic spread of disinformation without adequate moderation",
+            "Lack of visible countermeasures against coordinated disinformation campaigns"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch",
+      "name": "Child Protection and Safety Online",
+      "description": "Violations relating to the failure of platforms to protect minors, including inadequate age verification, poor child-focused safety measures, and targeted advertising practices that exploit children's vulnerabilities.",
+      "infringements": [
+        {
+          "id": "ch_01",
+          "name": "Failure to Implement Adequate Child Protection Measures",
+          "description": "Not deploying sufficient tools and policies to safeguard minors from harmful, age-inappropriate, or illegal content, including inadequate age verification, lack of parental controls, and absence of child-friendly safety features.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Absence of robust age verification mechanisms",
+            "Lack of child-friendly interface or privacy settings",
+            "Frequent complaints from parents regarding exposure to harmful content",
+            "Failure to conduct child-specific risk assessments",
+            "Lack of accessible reporting mechanisms for minors and their guardians"
+          ]
+        },
+        {
+          "id": "ch_02",
+          "name": "Misuse of Profiling for Targeted Advertising to Minors",
+          "description": "Using profiling based on personal data to target minors with advertisements, contravening DSA requirements, and exposing minors to manipulative commercial practices.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Advertisements tailored to minors based on sensitive personal data",
+            "Lack of effective age-based safeguards for targeted advertising",
+            "User reports of inappropriate ads directed at underage users",
+            "Evidence of profiling techniques used on minor users"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icg",
+      "name": "Illegal Content and Goods",
+      "description": "Content or online activities that violate laws, which platforms must address under the DSA’s notice-and-action rules and related provisions (e.g. tracing illegal sellers). This includes unlawful user content and illicit products or services offered on platforms.",
+      "infringements": [
+        {
+          "id": "icg_01",
+          "name": "Terrorist & Extremist Content",
+          "description": "Content that promotes, glorifies, or incites terrorism or violent extremism. Platforms are required to remove such material swiftly once notified, in line with DSA obligations to combat illegal content.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Use of slogans, symbols, or propaganda videos associated with terrorist organizations or extremist groups.",
+            "Posts praising or supporting terrorist acts or extremist violence (e.g. calls to join or fund a terrorist group).",
+            "Known terrorist or extremist material identified via hash databases or recognized patterns (e.g. violent extremist manifestos)."
+          ]
+        },
+        {
+          "id": "icg_02",
+          "name": "Child Sexual Abuse Material (CSAM)",
+          "description": "Any content depicting or soliciting sexual exploitation of minors. Such material is strictly illegal and must be immediately removed and reported, as mandated by law and reinforced through DSA content removal requirements.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Images or videos flagged by CSAI (Child Sexual Abuse Imagery) hash matches or AI classifiers as child exploitation.",
+            "Text or chat messages attempting to groom minors or exchange sexual content involving minors (e.g. codewords or explicit requests referencing children).",
+            "User reports or law enforcement notices indicating the presence of child abuse content or behavior."
+          ]
+        },
+        {
+          "id": "icg_03",
+          "name": "Hate Speech & Hate Crime Content",
+          "description": "Content that attacks or incites violence against people based on protected characteristics (race, religion, gender, sexual orientation, etc.), which is illegal under EU law. DSA requires swift action against such illegal hate content once identified.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Use of racial or homophobic slurs, epithets, or dehumanizing language targeting a protected group.",
+            "Content advocating harm, denial of rights, or genocide toward a demographic group (e.g. calls to violence against an ethnic or religious group).",
+            "Symbols or imagery associated with hate groups (e.g. swastikas, KKK symbols) in a context of promoting hate."
+          ]
+        },
+        {
+          "id": "icg_04",
+          "name": "Fraud & Scam Content",
+          "description": "Content that intends to defraud or deceive users for financial or personal gain (phishing, financial scams, fake giveaways, etc.). Such fraudulent schemes are illegal and platforms must act on them under DSA’s illegal content provisions.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Messages or posts requesting sensitive personal or financial information under false pretenses (e.g. phishing emails or fake customer support requests).",
+            "Claims or offers that are 'too good to be true' (e.g. get-rich-quick investment schemes, unrealistically high returns or rewards) often accompanied by urgency to act.",
+            "Impersonation of legitimate entities (banks, brands, government) in content or profiles to trick users (e.g. fake verified profiles contacting users)."
+          ]
+        },
+        {
+          "id": "icg_05",
+          "name": "Illicit Goods and Services",
+          "description": "Listings or posts offering illegal or regulated goods and services (drugs, weapons, human trafficking, etc.), or commercial listings that violate legal requirements. Under the DSA (e.g. seller traceability rules), platforms must prevent and remove offers of illicit goods and unverified vendors.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Product listings referencing illegal items (e.g. narcotics, firearms, counterfeit currency) or using known code words for them.",
+            "Offers for regulated services without proper authorization (e.g. gambling, prescription drugs without prescription, hacking services).",
+            "Suspicious marketplace activity: sellers with no verified identity or address, missing mandatory product information (e.g. lack of safety warnings or compliance markings), or unusually low prices for branded goods (indicator of counterfeits)."
+          ]
+        },
+        {
+          "id": "icg_06",
+          "name": "Intellectual Property Infringement",
+          "description": "Content or goods that violate copyright, trademark, or other IP rights (e.g. pirated media, counterfeit branded products). These are unlawful and must be taken down when identified in accordance with notice-and-action rules.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "User-uploaded videos, music, or software that match known copyrighted works (via content ID or hash match) without authorization.",
+            "Images or listings displaying trademarked logos or characters on products not sold by authorized sellers (possible counterfeits).",
+            "Frequent copyright takedown notices associated with a particular user or item (indicating repeated IP violations)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cv",
+      "name": "Cyber Violence",
+      "description": "Online behaviors that inflict psychological or emotional harm, threaten safety, or incite physical harm to individuals or groups. The DSA’s risk mitigation expectations include addressing such abuse to protect users (especially vulnerable groups and minors) from severe online harassment.",
+      "infringements": [
+        {
+          "id": "cv_01",
+          "name": "Harassment & Cyberbullying",
+          "description": "Persistent or malicious targeting of individuals with offensive, humiliating, or degrading remarks. While not all harassment is illegal, severe cases violate platform policies and contribute to systemic risks DSA asks platforms to curb.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Repeated use of insults, name-calling, or derogatory slurs directed at a specific user across multiple posts or messages.",
+            "Coordinated pile-ons where multiple accounts focus harassment on one individual (e.g. brigading incidents with identical or similar taunts).",
+            "Patterns of one user sending a high volume of negative or abusive messages to another user over a short period."
+          ]
+        },
+        {
+          "id": "cv_02",
+          "name": "Threats of Violence",
+          "description": "Explicit threats to harm, kill, or sexually assault someone, or calls for others to commit such violence. These constitute illegal content (e.g. criminal threats) and require removal and possible reporting under DSA guidelines.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Messages stating intent to physically harm (e.g. 'I will kill you' or 'you should be shot') directed at a person or group.",
+            "Images or graphics conveying violent threats (e.g. a photo of a weapon with someone's name on it, crosshairs over a person's image).",
+            "Indirect suggestions of violence that still target an individual (e.g. 'someone should teach you a lesson with a bat'), indicating menacing intent."
+          ]
+        },
+        {
+          "id": "cv_03",
+          "name": "Doxing & Privacy Invasion",
+          "description": "Malicious exposure of someone’s personal information (home address, phone numbers, workplace, private photos, etc.) without consent, typically to encourage harassment or intimidation. This practice can endanger individuals and violates privacy rights.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Posts or documents revealing personal contact details of a private individual (detailed address, phone, email) with malicious intent (e.g. 'pay them a visit').",
+            "Sharing of identity documents, private photos, or sensitive personal data (medical records, financial info) of someone without their permission.",
+            "Organization of mass harassment campaigns leveraging leaked personal info (e.g. urging others to harass the exposed individual at their workplace or home)."
+          ]
+        },
+        {
+          "id": "cv_04",
+          "name": "Non-Consensual Intimate Imagery",
+          "description": "Sharing or threatening to share someone's intimate images or videos without their consent (also known as revenge porn). This is illegal in many jurisdictions and platforms must remove it promptly to protect victims.",
+          "dsaArticles": [
+            "7"
+          ],
+          "observables": [
+            "Uploads of sexually explicit images/videos where a victim (often an ex-partner) is identifiable and reports indicate they did not consent to the distribution.",
+            "Content titles, captions, or comments suggesting an intimate image is being shared as retribution or without permission (e.g. 'Look at what my ex sent me').",
+            "User reports or flags specifically mentioning that private intimate content of theirs was posted without consent."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dmm",
+      "name": "Disinformation and Manipulated Media",
+      "description": "False or misleading information spread with the intent to deceive the public, including content enhanced or generated by AI. Under the DSA’s systemic risk provisions, large platforms must assess and mitigate the spread of disinformation and manipulated media that can harm society or public discourse.",
+      "infringements": [
+        {
+          "id": "dmm_01",
+          "name": "Coordinated Disinformation Campaigns",
+          "description": "Organized efforts to spread false narratives at scale, often using networks of fake accounts or bots to amplify misleading content. These undermine authentic discourse and are targeted by DSA-aligned risk mitigation measures.",
+          "dsaArticles": [
+            "14"
+          ],
+          "observables": [
+            "Clusters of newly created or low-credibility accounts posting the same misleading content or hashtags in a short time frame (suggesting inauthentic coordination).",
+            "Multiple social media profiles with signs of automation (lack of personal info, generic names, repetitive posts) all promoting identical political or conspiratorial messages.",
+            "Evidence of centralized control, such as accounts sharing content in synchronized patterns or exclusively during specific hours (possibly indicating a 'troll farm' or bot network)."
+          ]
+        },
+        {
+          "id": "dmm_02",
+          "name": "AI-Generated & Synthetic Media",
+          "description": "False or misleading content created using artificial intelligence, such as deepfake videos, AI-generated images, or algorithmically generated text purporting to be human. These can deceive viewers and are an emerging focus under DSA risk mitigation.",
+          "dsaArticles": [
+            "14"
+          ],
+          "observables": [
+            "Videos where a person's face or voice appears altered (e.g. lip-sync mismatch, unnatural facial movements) indicating a deepfake.",
+            "Images that contain subtle artifacts or inconsistencies (e.g. irregular reflections, distorted text) suggestive of AI generation or manipulation.",
+            "Articles or social media posts with language patterns or errors characteristic of AI-generated text (e.g. unusually repetitive phrases or overly formal tone in informal contexts).",
+            "Content that spreads rapidly without clear attribution to a reputable source, potentially originating from AI bots or deepfake accounts impersonating real people."
+          ]
+        },
+        {
+          "id": "dmm_03",
+          "name": "Political/Election Disinformation",
+          "description": "False information intended to influence political outcomes or undermine democratic processes. This includes fake news about candidates, parties, voting processes, or election results. DSA risk management mandates addressing such high-impact disinformation, especially around elections.",
+          "dsaArticles": [
+            "14"
+          ],
+          "observables": [
+            "Posts spreading incorrect voting information (e.g. wrong election dates, false claims about how to vote) often timed close to elections.",
+            "False claims about a candidate or public figure (e.g. fabricated scandals or fake quotes) that have been debunked by credible sources but continue circulating.",
+            "Inauthentic pages or profiles posing as official campaign or election authorities distributing misleading information (e.g. fake election commission accounts announcing bogus results).",
+            "Surges in content pushing narratives of election fraud or delegitimization without evidence, often matching known propaganda talking points."
+          ]
+        },
+        {
+          "id": "dmm_04",
+          "name": "Public Health Misinformation",
+          "description": "Health-related falsehoods that can endanger public safety or individual well-being, such as misinformation about vaccines, diseases, or treatments. The DSA encourages mitigation of such content, given its potential for societal harm (e.g. undermining public health efforts).",
+          "dsaArticles": [
+            "14"
+          ],
+          "observables": [
+            "Posts promoting false cures or dangerous health advice (e.g. unverified remedies for serious illnesses, anti-vaccine myths) that contradict medical consensus.",
+            "Conspiracy theories about health emergencies (e.g. claims that a pandemic is a hoax or deliberately caused) spreading widely, especially those flagged by health authorities as false.",
+            "Social media groups or pages centered on discrediting proven health measures (vaccination, mask use) and sharing repetitive misinformation (often identical infographics or text across many users).",
+            "Videos or articles alleging fabricated health crises or misrepresenting data (e.g. misusing statistics to downplay a disease) that are shared without context or fact-check."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dp",
+      "name": "Dark Patterns and Manipulative Design",
+      "description": "User interface designs or platform features that deliberately mislead, coerce, or manipulate users into choices they might not otherwise make. The DSA explicitly prohibits such deceptive practices (Article 25), requiring platforms to offer fair and transparent interfaces.",
+      "infringements": [
+        {
+          "id": "dp_01",
+          "name": "Obstruction (Hard to Cancel/Opt-Out)",
+          "description": "\"Design strategies that make it difficult for users to refuse consent or exit a service. Users might find it easy to sign up or opt in, but extremely cumbersome to decline or cancel (known as a \\\"roach motel\\\" effect).",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Processes for account deletion or subscription cancellation requiring many more steps than sign-up (e.g. multiple confirmation pages or mandatory calls to customer service).",
+            "Absence of a clearly visible \\\"no thanks\\\" or \\\"cancel\\\" option in a consent or purchase flow, forcing the user to navigate obscure menus to opt out.",
+            "Interfaces that loop the user when trying to opt out (e.g. clicking \\\"cancel\\\" just refreshes the page or leads to another persuasive prompt instead of confirming cancellation)."
+          ]
+        },
+        {
+          "id": "dp_02",
+          "name": "Interface Interference & Misdirection",
+          "description": "UI elements that guide the user toward a particular choice through visual or interactive trickery. This includes disguising ads as content, mislabeling buttons, or using design hierarchy to favor one option over others.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Prominent, brightly colored buttons for \\\"accept\\\" or \\\"agree\\\" actions while \\\"decline\\\" or \\\"settings\\\" are hidden in smaller text or harder-to-find locations.",
+            "Pre-checked checkboxes or toggles that opt users into newsletters, data sharing, or add-ons without clear consent, relying on users missing the opt-out.",
+            "Buttons or links that do not do what the user expects (e.g. a \\\"X\\\" icon that does not close a pop-up but instead opens a page, or a \\\"cancel\\\" button that still proceeds with an action)."
+          ]
+        },
+        {
+          "id": "dp_03",
+          "name": "Hidden Information (Sneaking)",
+          "description": "Concealing or downplaying important information from users until after an action is taken. This can involve hiding costs, terms, or consequences, leading users to commit to something without full knowledge.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Additional fees or charges only revealed at the final checkout page, after the user has gone through most of the purchase process.",
+            "Important terms (cancellation policy, auto-renewal, data usage) buried in lengthy terms of service or in footnotes that are not immediately visible to the user during decision-making.",
+            "Default settings that quietly permit data sharing or marketing unless the user discovers and disables them deep in a settings menu."
+          ]
+        },
+        {
+          "id": "dp_04",
+          "name": "Forced Action or Bundling",
+          "description": "Requiring users to perform an unrelated or more intrusive action to get the outcome they desire. This often means bundling a less desirable option with a desired one, so users feel they have no choice but to agree.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Mandating acceptance of broad data collection or marketing emails in order to sign up for a service (e.g. no option to create account without agreeing to receive promotions).",
+            "Forcing users to add extra items or switch settings they don’t want during a process (e.g. automatically including insurance or addons in a purchase that the user must manually remove).",
+            "No viable alternative presented: for example, an app that insists on continuous location access for features that could technically work with one-time access, pushing users to grant more permissions."
+          ]
+        },
+        {
+          "id": "dp_05",
+          "name": "Social Pressure & Fake Urgency",
+          "description": "Tactics that manipulate emotions or create false time pressure to influence user decisions. This includes guilt-tripping language, fake scarcity, or simulated high demand alerts to rush user action.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Phrases in dialogs that shame the user for opting out (e.g. a decline button labeled \\\"No, I don't want to save money\\\" or \\\"I prefer to miss out on deals\\\").",
+            "Countdown timers for offers or carts that reset upon refresh or are clearly not tied to real inventory, indicating artificial time pressure.",
+            "Messages about other users' actions designed to push decision-making (e.g. \\\"5 other people are looking at this item\\\" or \\\"Your friends have joined this event!\\ when such claims are exaggerated or irrelevant)."
+          ]
+        },
+        {
+          "id": "dp_06",
+          "name": "Adaptive Manipulation",
+          "description": "Using algorithms or AI to dynamically alter the user experience in order to exploit individual user behavior or vulnerabilities. This emerging pattern means the interface or offers change in real-time to maximize the platform’s benefit at the expense of user choice.",
+          "dsaArticles": [
+            "25"
+          ],
+          "observables": [
+            "Unusual personalization where two users see significantly different interface layouts or options in situations where it isn’t expected (suggesting one user is being tested with a more restrictive or persuasive design).",
+            "Price personalization or inconsistent pricing patterns (e.g. a returning user sees higher prices or more add-ons than a first-time visitor, indicating the system adapts to willingness to pay).",
+            "Rapid A/B test cycles where certain users consistently encounter more friction or persuasive prompts (detected via user experience monitoring), implying the platform is algorithmically finding which users are easiest to push into a desired action."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tap",
+      "name": "Targeted Advertisements & Profiling",
+      "description": "Violations of the DSA’s advertising rules, such as impermissible targeting and lack of transparency. It covers practices like using forbidden data for targeting (minors’ data or sensitive categories) and failing to provide clear ad disclosures or user controls over ad profiling.",
+      "infringements": [
+        {
+          "id": "tap_01",
+          "name": "Ads Targeting Minors",
+          "description": "Advertising based on data from or aimed explicitly at minors (under 17). The DSA bans the use of minors’ personal data for targeted advertising, reflecting the need to protect children from profiling and inappropriate ads.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Personalized ads appearing on accounts or profiles known to belong to children or teenagers (e.g. indicated by declared age or content preferences).",
+            "Advertising content that is unusually tailored to a youthful audience (cartoon characters, school-related themes) being delivered to users likely under 17, suggesting age-based targeting.",
+            "Use of age-sensitive keywords or audience segments in ad delivery data (when available) that include children (e.g. \\\"teen\\\" interests or categories in targeting parameters)."
+          ]
+        },
+        {
+          "id": "tap_02",
+          "name": "Ads Using Sensitive Personal Data",
+          "description": "Targeted ads that rely on users’ sensitive attributes such as political beliefs, religious affiliation, health status, sexual orientation, etc. DSA Article 26 expressly forbids targeting based on such sensitive data without explicit consent.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Advertisements that seem to be targeted very specifically to sensitive aspects of a user’s life (e.g. fertility clinic ads only shown after a user visits pregnancy-related forums, implying use of health data).",
+            "Ad targeting information (from \\\"Why am I seeing this?\\\" disclosures or ad APIs) that references sensitive categories (e.g. \\\"based on your interest in Christianity\\\" or \\\"based on your political leaning\\\").",
+            "Clusters of users with a common sensitive trait all receiving the same ad campaign, detected via analysis of ad distribution, which suggests targeting by that trait."
+          ]
+        },
+        {
+          "id": "tap_03",
+          "name": "Lack of Ad Transparency",
+          "description": "Failures to provide clear and accessible information about ads to users, as required by the DSA. This includes not labeling ads adequately, not disclosing the sponsor, or not offering an explanation of why the user is seeing the ad.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Sponsored posts or ads that are not explicitly marked as advertisements (e.g. missing labels like \\\"Ad\\\", \\\"Sponsored\\\", or subtle labeling that could be easily overlooked).",
+            "No visible information on who paid for an advertisement or who the advertiser is on the ad unit (e.g. no \\\"Sponsored by [Entity]\\\" disclosure or profile link).",
+            "Omission of any \\\"why am I seeing this ad\\\" feature or similar transparency tool that reveals targeting criteria, leaving users without insight into why they were targeted."
+          ]
+        },
+        {
+          "id": "tap_04",
+          "name": "Misleading or Disguised Advertising",
+          "description": "Advertisements presented in a deceptive manner either by blending into non-ad content or by using false or misleading claims. This includes ads made to look like user-generated content or ads with content that misrepresents the product/service.",
+          "dsaArticles": [
+            "26"
+          ],
+          "observables": [
+            "Advertisements formatted to mimic editorial or user content (e.g. news-like articles or social media posts that do not clearly appear as ads, aside from maybe fine-print).",
+            "Influencer or affiliate posts promoting a product without any disclosure (no #ad or mention of sponsorship), effectively hiding the commercial intent from viewers.",
+            "Ad creatives that use doctored images or fake testimonials (e.g. before-and-after images that are manipulated, or quotes from non-existent people) to entice clicks, detectable by image analysis or cross-checking claims.",
+            "Ads that lead to landing pages which significantly differ from the ad content promised (bait-and-switch), identified by high bounce rates or user complaints (e.g. ad advertises a free offer, landing page tries to sell something else)."
+          ]
+        }
+      ]
+    }
+  ]
 }
